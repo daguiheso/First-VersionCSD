@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
 /*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1071,12 +1072,12 @@ th {
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 16px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
@@ -6605,9 +6606,15 @@ button.close {
 .icon-csd:before {
   content: "\e600";
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .header {
   height: 162px;
-  font-size: 7em;
+  font-size: 6em;
+}
+.csd {
+  font-weight: bold;
 }
 .csd-icon {
   position: relative;
@@ -6644,7 +6651,91 @@ button.close {
   background: #17b4c7;
 }
 .info {
-  padding: 50px;
+  padding: 0 50px;
+  font-size: 0;
+}
+.info-whatis {
+  display: inline-table;
+  width: 60%;
+  vertical-align: top;
+  padding-bottom: 3.12rem;
+  padding: 3.12rem 0;
+}
+.info-whatis p:nth-child(1) {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.50rem;
+  color: #17c7a0;
+  margin-bottom: 0;
+}
+.info-whatis p:nth-child(2) {
+  font-size: 1.625rem;
+  color: #797979;
+  line-height: 1.875rem;
+  margin-bottom: 24px;
+}
+.info-whatis p:nth-child(3) {
+  font-size: 1rem;
+  color: #626262;
+  line-height: 1.62rem;
+  margin-bottom: 0;
+}
+.info-imgcsd {
+  background: red;
+  width: 40%;
+  height: 229px;
+  display: inline-table;
+  padding: 3.12rem 0;
+}
+.info-actionsimgpc {
+  width: 45%;
+  background: #f4f4f4;
+  display: inline-block;
+  padding: 3.12em 0;
+  font-size: 1rem;
+  vertical-align: top;
+  text-align: center;
+}
+.info-actionsimgpc img {
+  height: 300px;
+}
+.info-actions {
+  width: 55%;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #626262;
+  line-height: 1.62rem;
+  background: #f4f4f4;
+  padding: 3.12em 0;
+}
+.btn-seeplans {
+  background: #17C7A0;
+  padding: 1.25em 2.50em;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left: 2.5em;
+}
+.info-featureone {
+  padding: 3.12rem 0;
+  display: inline-block;
+  height: 300px;
+  width: 33.33%;
+  background: green;
+}
+.info-featuretwo {
+  padding: 3.12rem 0;
+  display: inline-block;
+  height: 300px;
+  width: 33.33%;
+  background: brown;
+}
+.info-featurethree {
+  padding: 3.12rem 0;
+  display: inline-block;
+  height: 300px;
+  width: 33.33%;
+  background: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
