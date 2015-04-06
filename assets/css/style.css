@@ -6609,6 +6609,11 @@ button.close {
 body {
   font-family: 'Open Sans', sans-serif;
 }
+/*
+
+	HEADER
+
+*/
 .header {
   height: 162px;
   font-size: 6em;
@@ -6646,20 +6651,27 @@ body {
   font-size: 1em;
   width: 80px;
 }
+/*
+
+	SLIDER
+
+*/
 .slider {
   height: 493px;
   background: #17b4c7;
 }
+/*
+
+	INFO
+
+*/
 .info {
-  padding: 0 50px;
   font-size: 0;
+  padding-bottom: 3.12rem;
 }
 .info-whatis {
-  display: inline-table;
-  width: 60%;
-  vertical-align: top;
   padding-bottom: 3.12rem;
-  padding: 3.12rem 0;
+  padding: 3.12rem 1.5rem;
 }
 .info-whatis p:nth-child(1) {
   font-family: 'Fjalla One', sans-serif;
@@ -6678,31 +6690,27 @@ body {
   color: #626262;
   line-height: 1.62rem;
   margin-bottom: 0;
+  text-align: justify;
 }
 .info-imgcsd {
   background: red;
-  width: 40%;
   height: 229px;
-  display: inline-table;
   padding: 3.12rem 0;
 }
+/*
+
+	INFO-ACTIONS
+
+*/
 .info-actionsimgpc {
-  width: 45%;
   background: #f4f4f4;
-  display: inline-block;
   padding: 3.12em 0;
   font-size: 1rem;
   vertical-align: top;
   text-align: center;
 }
-.info-actionsimgpc img {
-  height: 300px;
-}
 .info-actions {
-  width: 55%;
-  display: inline-block;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
   color: #626262;
   line-height: 1.62rem;
   background: #f4f4f4;
@@ -6716,26 +6724,50 @@ body {
   font-weight: bold;
   margin-left: 2.5em;
 }
-.info-featureone {
-  padding: 3.12rem 0;
-  display: inline-block;
-  height: 300px;
-  width: 33.33%;
-  background: green;
+/*
+
+	INFO-FEATURES
+
+*/
+.info-feature {
+  margin-top: 3.12rem;
+  padding: 0 2rem;
 }
-.info-featuretwo {
-  padding: 3.12rem 0;
-  display: inline-block;
-  height: 300px;
-  width: 33.33%;
-  background: brown;
+.feature-head {
+  background: #f4f4f4;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem;
+  line-height: 108px;
+  text-align: center;
+  padding: 2.5rem;
+  color: #626262;
+  height: 188px;
+  border-radius: 5px;
 }
-.info-featurethree {
-  padding: 3.12rem 0;
-  display: inline-block;
-  height: 300px;
-  width: 33.33%;
-  background: orange;
+.feature-head:hover {
+  background: #17C7A0;
+  color: #FFF;
+}
+.feature-body {
+  font-size: 1rem;
+  color: #777777;
+  padding: 1.2rem .5rem 0;
+  text-align: justify;
+}
+/*
+
+	PLANS
+
+*/
+.line {
+  border: 1px solid #f4f4f4;
+}
+.plans-title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.50rem;
+  color: #17C7A0;
+  text-align: center;
+  margin-top: 3.12rem;
 }
 
 /*# sourceMappingURL=style.css.map */
