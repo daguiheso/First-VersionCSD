@@ -6675,14 +6675,14 @@ body {
   float: left;
   top: 1.16em;
   position: relative;
-  right: 2em;
+  right: 2.4em;
   font-size: .5em;
 }
 .loglog {
   width: 173px;
   height: 132px;
   position: relative;
-  left: 5.3rem;
+  left: 6.5rem;
 }
 /*
 
@@ -6760,11 +6760,17 @@ body {
 }
 .btn-seeplans {
   background: #17C7A0;
-  padding: 1.25em 2.50em;
+  padding: 1.25em 2rem;
   font-size: 1rem;
-  color: #FFFFFF;
   font-weight: bold;
   margin-left: 2.5em;
+  color: #FFFFFF;
+  padding: 1.25em 2.50em;
+  text-decoration: none;
+}
+.btn-seeplans:hover {
+  background: #198B72;
+  color: #FFFFFF;
 }
 /*
 
@@ -6932,14 +6938,19 @@ body {
   font-size: 0.75rem;
   padding-top: 0.1rem;
 }
-.btn-contactenos {
-  background: #198B72;
+.btn-contact {
+  background: #17C7A0;
   padding: .6rem 2.2rem;
   font-size: 0.88rem;
-  color: #777777;
+  color: #FFFFFF;
   font-weight: bold;
   position: absolute;
   right: 3.1rem;
+  text-decoration: none;
+}
+.btn-contact:hover {
+  background: #198B72;
+  color: #FFFFFF;
 }
 .enterprise-footer p {
   font-size: 0.75rem;
@@ -6960,6 +6971,10 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: bold;
+}
+.btn-prueba:hover {
+  color: #FFFFFF;
+  background: #198B72;
 }
 /*
 
