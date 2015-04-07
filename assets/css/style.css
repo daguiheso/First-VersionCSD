@@ -6824,8 +6824,9 @@ body {
 }
 .checkmark-text {
   position: relative;
-  top: -1rem;
+  top: 0.3rem;
   left: .4rem;
+  line-height: 1.6rem;
 }
 .modul-icon {
   position: relative;
@@ -7002,11 +7003,11 @@ body {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1199px) {
-  .letter-spacing {
-    letter-spacing: 0.06rem;
-  }
   .info-actionsimgpc {
     padding: 4.7em 0;
+  }
+  .feature-bodythree {
+    letter-spacing: 0.06rem;
   }
   .btn-contact {
     right: 1.3rem;
@@ -7024,6 +7025,79 @@ body {
   }
   .mobile-icon {
     top: 5.2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .info-imgcsd {
+    padding: 0 0 3.12rem;
+    text-align: center;
+  }
+  .info-actionsimgpc {
+    padding: 3.12em 0 0;
+  }
+  .info-actions {
+    padding: 3.12em;
+    text-align: justify;
+  }
+  .btn-seeplans {
+    margin-left: 14em;
+  }
+  .random-icon {
+    font-size: 4rem;
+    position: relative;
+    bottom: 0.2rem;
+  }
+  .checkmark-icon {
+    font-size: 4rem;
+    position: relative;
+    top: 0.1rem;
+  }
+  .checkmark-text {
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+    line-height: 1.7rem;
+  }
+  .modul-icon {
+    top: .6rem;
+  }
+  .modul-text {
+    line-height: 1.6rem;
+    position: relative;
+    top: 0.3rem;
+  }
+  .md {
+    padding: 3.9rem 2.5rem 4.6rem;
+  }
+  .plans-starter,
+  .plans-medium,
+  .plans-advanced,
+  .plans-enterprise {
+    margin-top: 3.12rem;
+    height: 673px;
+  }
+  .plans-title {
+    padding: 2.50rem 0 0;
+  }
+  .enterprise-footer {
+    position: relative;
+  }
+  .btn-contact {
+    right: 5.3rem;
+  }
+  .mobile-icon {
+    top: 3.55rem;
+  }
+  .right-text {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .info {
+    margin: 0 4rem;
+  }
+  .plans {
+    margin: 0 10rem;
   }
 }
 
