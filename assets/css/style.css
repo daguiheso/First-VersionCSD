@@ -6762,6 +6762,9 @@ body {
 .line {
   border: 1px solid #f4f4f4;
 }
+.pd {
+  padding: 0.5rem;
+}
 .plans {
   font-size: 0;
   padding-bottom: 3.12rem;
@@ -6779,7 +6782,7 @@ body {
 .plans-enterprise {
   background: #f4f4f4;
   border-radius: 5px;
-  padding: 0;
+  padding: 0 0 3rem 0;
 }
 .starter-head,
 .medium-head,
@@ -6791,22 +6794,87 @@ body {
   padding: 1rem;
 }
 /* STARTER */
-.starter-body {
+.starter-body,
+.medium-body,
+.advanced-body {
   padding: 2.5rem;
-  background: green;
+  background: #17C7A0;
   text-align: center;
   color: #FFF;
 }
-.starter-body p:nth-child(1) {
+.starter-body p:nth-child(1),
+.medium-body p:nth-child(1),
+.advanced-body p:nth-child(1) {
   font-size: 3.75rem;
   font-weight: 700;
   margin-bottom: 0;
-  height: 70px;
+  height: 57px;
+  position: relative;
+  bottom: 1rem;
 }
-.starter-body p:nth-child(2) {
+.starter-body p:nth-child(2),
+.medium-body p:nth-child(2),
+.advanced-body p:nth-child(2) {
   font-size: 0.88rem;
-  border-bottom: 1px dotted;
+  border-bottom: 2px dotted;
   padding-bottom: .4rem;
+}
+.starter-body p:nth-child(3),
+.starter-body p:nth-child(4),
+.medium-body p:nth-child(3),
+.medium-body p:nth-child(4),
+.advanced-body p:nth-child(3),
+.advanced-body p:nth-child(4) {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+.starter-footer p,
+.medium-footer p,
+.advanced-footer p {
+  font-size: 0.75rem;
+  color: #777777;
+  border-bottom: 1px dotted;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+/* ENTERPRISE */
+.enterprise-body {
+  padding: 2.5rem 2.5rem 4.6rem;
+  background: #17C7A0;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+}
+.enterprise-body p:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  border-bottom: 2px dotted;
+  padding-bottom: 0.4rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+.enterprise-body p:nth-child(2) {
+  font-size: 0.75rem;
+  padding-top: 0.1rem;
+}
+.btn-contactenos {
+  background: #198B72;
+  padding: 1rem;
+  font-size: 0.88rem;
+  color: #777777;
+  font-weight: bold;
+  position: absolute;
+  right: 3.1rem;
+}
+.enterprise-footer p {
+  font-size: 0.75rem;
+  color: #777777;
+  border-bottom: 1px dotted;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
