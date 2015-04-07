@@ -129,6 +129,9 @@ body {
 	background: rgb(244,244,244);
 	padding: 3.12em 0;
 }
+.info-actions ul li p {
+	margin-bottom: 0;
+}
 .btn-seeplans {
 	background: #17C7A0;
 	padding: 1.25em 2rem;
@@ -168,10 +171,16 @@ body {
 	color: #FFF;
 }
 .feature-body {
-    font-size: 1rem;
+    text-align: justify;
+}
+.feature-body p {
+	margin-bottom: 0;
+	font-size: 1rem;
     color: #777777;
     padding: 1.2rem .5rem 0;
-    text-align: justify;
+}
+.feature-bodythree {
+	letter-spacing: 0.01rem;
 }
 .random-icon {
 	font-size: 4rem;
@@ -357,9 +366,36 @@ body {
 	background: #17C7A0;
 	text-align: center;
 	color: #FFF;
-	font-size: .6rem;
+	font-size: .8rem;
 	line-height: 3.75rem;
 }
 .footer p {
 	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1199px) { 
+	.letter-spacing {
+		letter-spacing: 0.06rem;
+	}
+	.info-actionsimgpc {
+		padding: 4.7em 0;
+	}
+	.btn-contact {
+		right: 1.3rem;
+	}
+	.starter-body,
+	.medium-body,
+	.advanced-body {
+		padding: 3.2rem;
+	}
+	.plans-starter,
+	.plans-medium,
+	.plans-advanced,
+	.plans-enterprise {
+	    height: 772px;
+	}
+	.mobile-icon {
+		top: 5.2rem;
+	}
+
 }
