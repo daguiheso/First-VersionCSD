@@ -1,10 +1,23 @@
 @import "bootstrap.less";
 @import "fonts.less";
+@import "fonts2.less";
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
 
 body {
 	font-family: 'Open Sans', sans-serif;
+}
+
+/* oocss clases */
+.absolute {
+	position: absolute;
+}
+.relative
+{
+	position: relative;
+}
+.right-text {
+	text-align: right !important;
 }
 /*
 
@@ -33,20 +46,11 @@ body {
     right: 2em;
     font-size: .5em;
 }
-.logo-csdCloud{
-  	font-family: 'Fjalla One', sans-serif;
-	position: absolute;
-  	left: .1em;
-  	top: 1.8em;
-  	font-size: .5em;
-}
-.logo-csdSD{
-    font-family: 'Fjalla One', sans-serif;
-	position: absolute;
-	right: -1.5em;
-	top: 4em;
-	font-size: 1em;
-	width: 80px;
+.loglog {
+	width: 173px;
+	height: 132px;
+	position: relative;
+	left: 5.3rem;
 }
 /*
 
@@ -90,9 +94,18 @@ body {
     text-align: justify;
 }
 .info-imgcsd {
-    background: red;
-    height: 229px;
     padding: 3.12rem 0;
+    text-align: center;
+}
+.info-imgcsd img {
+	width: 335px;
+	height: 284px;
+}
+.mobile-icon {
+	font-size: 2.2rem;
+	position: absolute;
+	top: 4.65rem;
+	left: 1.2rem;
 }
 /*
 
@@ -107,6 +120,7 @@ body {
 	text-align: center;
 }
 .info-actionsimgpc img {
+
 }
 .info-actions {
 	font-size: 1rem;
@@ -134,14 +148,14 @@ body {
 }
 .feature-head {
 	background: rgb(244,244,244);
-  font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 	font-size: 1.5rem;
-	line-height: 108px;
 	text-align: center;
 	padding: 2.5rem;
 	color: #626262;
 	height: 188px;
 	border-radius: 5px;
+	position: relative;
 }
 .feature-head:hover {
 	background: #17C7A0;
@@ -152,6 +166,29 @@ body {
     color: #777777;
     padding: 1.2rem .5rem 0;
     text-align: justify;
+}
+.random-icon {
+	font-size: 4rem;
+}
+.random-text {
+	position: relative;
+}
+.checkmark-icon {
+	font-size: 4rem;
+    position: relative;
+    top: -0.5rem;
+}
+.checkmark-text {
+	position: relative;
+	top: -1rem;
+	left: .4rem;
+}
+.modul-icon {
+	position: relative;
+	font-size: 4rem;
+}
+.modul-text {
+	position: relative;
 }
 /*
 
@@ -188,7 +225,7 @@ body {
 .plans-advanced,
 .plans-enterprise {
 	background: rgb(244,244,244);
-	border-radius: 5px;
+	border-radius: 10px;
     padding: 0 0 3rem 0;
     height: 700px;
 }
@@ -268,7 +305,7 @@ body {
 }
 .btn-contactenos {
 	background: #198B72;
-	padding: 1rem;
+	padding: .6rem 2.2rem;
 	font-size: 0.88rem;
 	color: #777777;
 	font-weight: bold;
@@ -281,10 +318,8 @@ body {
 	border-bottom: 1px dotted;
 	text-align: center;
 	padding: 1rem 0;
-	//margin-bottom: 0;
 	margin: 0 1rem;
 }
-
 /* BOTTOM PRUEBA */ 
 .prueba {
 	text-align: center;
