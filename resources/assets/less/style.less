@@ -19,6 +19,10 @@ body {
 .right-text {
 	text-align: right !important;
 }
+.center
+{
+	text-align: center;
+}
 /*
 
 	HEADER
@@ -143,7 +147,6 @@ body {
 	padding: 1.25em 2rem;
 	font-size: 1rem;
 	font-weight: bold;
-	margin-left: 2.5em;
 	color: #FFFFFF;
 	padding: 1.25em 2.50em;
 	text-decoration: none;
@@ -416,11 +419,8 @@ body {
 	 	padding: 3.12em 0 0;
 	}
 	.info-actions {
-		padding: 3.12em;
+		padding: 3.12em 3.12em 3.12em 2em;
 		text-align: justify;
-	}
-	.btn-seeplans {
-		margin-left: 14em;
 	}
 	.random-icon {
 		font-size: 4rem;
@@ -472,6 +472,12 @@ body {
 	.right-text {
 	 	text-align: center !important;
 	}
+	.rds-icon {
+	    right: 1.4em;
+	}
+	.loglog {
+	    left: 5.5rem;
+	}
 } 
 
 @media screen and (max-width: 767px) {
@@ -480,5 +486,235 @@ body {
 	}
 	.plans {
 		margin: 0 10rem;
+	}
+	.header {
+	    font-size: 5em;
+	}
+	.loglog {
+	    top: .8rem;
+	}
+	.rds-icon {
+	    top: 1.6em;
+	}
+	.checkmark-text {
+	    left: 6rem;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.rds-icon {
+	    right: 5.5rem;
+	}
+}
+@media screen and (max-width: 667px) {
+	.loglog {
+	    left: 3.5rem;
+	}
+	.rds-icon {
+	    right: 4.5rem;
+	}
+	.info {
+	    margin: 0 3rem;
+	}
+	.plans {
+	    margin: 0 8rem;
+	}
+	.plans-starter {
+		height: 545px;
+	}
+	.plans-medium,
+	.plans-advanced {
+		height: 622px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.info-actionsimgpc img {
+		width: 315px; 
+	}
+	.checkmark-text {
+	    left: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.loglog {
+	    left: 2rem;
+	}
+	.rds-icon {
+	    right: 1em;
+	}
+	.plans {
+	    margin: 0 7rem;
+	}
+	.btn-contact {
+	    right: 4.45rem;
+	}
+	.checkmark-text {
+	    left: 1.6rem;
+	}
+	.plans-starter {
+		height: 550px;
+	}
+	.plans-medium,
+	.plans-advanced {
+		height: 626px;
+	}
+	.plans-enterprise {
+		height: 667px;
+	}	
+}
+@media screen and (max-width: 568px) {
+	.loglog {
+	    left: 1rem;
+	}
+	.rds-icon {
+	    right: .7em;
+	}
+	.info {
+	    margin: 0 2rem;
+	}
+	.checkmark-text {
+	    left: 2.6rem;
+	}
+	.btn-contact {
+	    right: 3.45rem;
+	}
+	.mobile-icon {
+	    top: 4.7rem;
+	    left: 0.5rem;
+	}
+	.plans-enterprise {
+	    height: 706px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header {
+		font-size: 4em;
+	}
+	.loglog {
+		top: 1.8rem;
+		width: 120px;
+		height: 105px;
+		left: 0.5rem;
+	}
+	.rds-icon {
+	    top: 2.1em;
+	    right: 0.4em;
+	}
+	.info {
+		margin: 0 1rem;
+	}
+	.info-actionsimgpc img{
+		height: 240px;
+	}
+	.plans {
+	    margin: 0 1rem;
+	}
+	.checkmark-text {
+	    left: 1.35rem;
+	}
+	.btn-contact {
+	    right: 7.5rem;
+	}
+	.btn-prueba {
+		padding: 1.25em 0.5em;
+	}
+	.mobile-icon {
+	    top: 3.5rem;
+	    left: 1.5rem;
+	}
+}
+@media screen and (max-width: 480px) {
+	.info-actions {
+	    padding: 3.12em 3.12em 3.12em 1.5em;
+	}
+	.btn-seeplans {
+	    margin-left: 1rem;
+	}
+}
+@media screen and (max-width: 384px) {
+	.header {
+	    font-size: 3.6em;
+	}
+	.rds-icon {
+	    top: 2.4em;
+	    right: 0.4em;
+	}
+	.info {
+	  margin: 0 .3rem;
+	}
+	.info-imgcsd img {
+	    width: 286px;
+	}
+	.info-actionsimgpc img {
+	    width: 241px;
+	}
+	.btn-contact {
+	    right: 4.1rem;
+	}
+	.mobile-icon {
+	    left: 1.1rem;
+	}
+}
+@media screen and (max-width: 375px) {
+	.checkmark-text {
+	    left: 0rem;
+	}
+	.btn-contact {
+	    right: 3.5rem;
+	}
+	.mobile-icon {
+	    top: 3.5rem;
+	    left: 0.6rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.header {
+ 		height: 130px;
+ 		font-size: 2.6em;
+	}
+	.loglog {
+	    top: 1rem;
+	    width: 114px;
+	    height: 95px;
+	    left: 0.5rem;
+	}
+	.rds-icon {
+	    top: 2.6em;
+	    right: 0.4em;
+	}
+	.info {
+		margin: 0;
+	}
+	.info-imgcsd img {
+	    width: 227px;
+		height: 212px;
+	}
+	.info-actions {
+	  padding: 1.3em;
+	}
+	.lstyl {
+		list-style: none;
+		padding-left: 0;
+	}
+	.btn-seeplans {
+	  margin-left: 0; 
+	}
+	.plans-starter {
+	    height: 580px;
+	}
+	.plans-medium, 
+	.plans-advanced {
+	    height: 669px;
+	}
+	.plans-enterprise {
+	    height: 790px;
+	}
+	.mobile-icon {
+		display: none;
+	}
+	.btn-contact {
+	    right: 2rem;
 	}
 }
