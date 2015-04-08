@@ -6702,6 +6702,59 @@ body {
 .img-metric {
   height: 100% !important;
 }
+.img-ipad {
+  float: left;
+}
+.slider-one-content {
+  position: absolute;
+  top: -10rem;
+  padding: 13rem 0;
+}
+.slider-one p:nth-child(1) {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF;
+  font-size: 2.5rem;
+}
+.slider-one p:nth-child(2) {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF;
+  font-size: 2.5rem;
+}
+.slider-one p:nth-child(3) {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF;
+  font-size: 2.5rem;
+}
+.slider-one p:Snth-child(4) {
+  font-size: 1.06rem;
+  font-weight: bold;
+}
+.slider-one a {
+  background: #00dbaa;
+}
+.slider-two {
+  text-align: left;
+}
+.slider-two p:nth-child(1) {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF;
+  font-size: 5.12rem;
+  bottom: 24rem;
+  position: absolute;
+  left: -4rem;
+}
+.slider-two p:nth-child(2) {
+  position: absolute;
+  bottom: 20rem;
+  left: -4rem;
+  width: 373px;
+  line-height: 30px;
+}
+/*.slider-one,
+.slider-two,
+.slider-three {
+	padding: 0 14.50rem; 
+}*/
 /*
 
 	INFO
@@ -6989,6 +7042,7 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: bold;
+  border-style: none;
 }
 .btn-prueba:hover {
   color: #FFFFFF;
