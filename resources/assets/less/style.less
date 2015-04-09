@@ -263,6 +263,7 @@ body {
 	color: #FFFFFF;
 	padding: 1.25em 2.50em;
 	text-decoration: none;
+	transition: width 5s;
 }
 .btn-seeplans:hover {
 	background: #198B72;
@@ -371,7 +372,7 @@ body {
 .medium-head,
 .advanced-head,
 .enterprise-head {
-	font-size: 1.12rem;
+	  font-size: 1.12rem;
     color: #626262;
     text-align: center;
     padding: 1rem;
@@ -533,6 +534,23 @@ body {
 .btn-enviar:hover {
 	background: #198B72;
 	color: #FFFFFF;
+}
+/*
+
+	ANIMATIONS
+
+*/
+.zoom{
+    transition: height .1s, transform .1s;
+    -moz-transition:  height .1s, -moz-transform .1s;
+    -webkit-transition: height .1s, -webkit-transform .1s;
+    -o-transition: height .1s,-o-transform .1s;       
+}
+.zoom:hover{
+    transform : scale(1.1);
+    -moz-transform : scale(1.1);      
+    -webkit-transform : scale(1.1);   
+    -o-transform : scale(1.1);       
 }
 /*
 
