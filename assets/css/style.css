@@ -6660,38 +6660,38 @@ body {
 
 */
 .header {
-  height: 162px;
   font-size: 6em;
+  height: 162px;
 }
 .csd {
   font-weight: bold;
 }
 .csd-icon {
   position: relative;
-  left: 1em;
   color: #17c7a0;
   float: left;
+  left: 1em;
   top: 0.15em;
 }
 .rds-icon {
   color: #adadad;
   float: left;
-  top: 1.16em;
+  font-size: .5em;
   position: relative;
   right: 2.4em;
-  font-size: .5em;
+  top: 1.16em;
   z-index: 5;
 }
 .loglog {
-  width: 173px;
   height: 132px;
-  position: relative;
   left: 6.5rem;
+  position: relative;
+  width: 173px;
 }
 .mobiles-img img {
-  padding: 0;
   height: auto;
   max-width: 100%;
+  padding: 0;
 }
 /*
 
@@ -6699,8 +6699,8 @@ body {
 
 */
 .slider {
-  height: 493px;
   background: #17b4c7;
+  height: 493px;
 }
 .full-height {
   height: 100% !important;
