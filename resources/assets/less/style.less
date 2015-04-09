@@ -50,12 +50,18 @@ body {
     position: relative;
     right: 2.4em;
     font-size: .5em;
+    z-index: 5;
 }
 .loglog {
 	width: 173px;
 	height: 132px;
 	position: relative;
 	left: 6.5rem; 
+}
+.mobiles-img img {
+	padding: 0;
+	height: auto;
+	max-width: 100%;
 }
 /*
 
@@ -74,32 +80,37 @@ body {
 }
 .img-ipad{
 	float: left;
+	position: relative;
+	width: 475px;
+	right: 1rem;
 }
 .slider-one-content {
 	position: absolute;
 	top: -10rem;
 	padding: 13rem 0;
 }
-.slider-one p:nth-child(1) {
+.slider-one-subcontent {
+	width: 1119px;
+	padding: 4rem 4rem 0;
+	position: relative;
+	bottom: 1rem;
+}
+.checkmark-iconSlider {
+	font-size: 3rem;
+	float: left;
+	position: relative;
+	left: 4rem;
+}
+.slider-one-subcontent p {
     font-family: 'Fjalla One', sans-serif;
 	color: #FFF;
 	font-size: 2.5rem; 
 }
-.slider-one p:nth-child(2) {
-    font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-	font-size: 2.5rem;
+.p4 {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 1.5rem !important;
 }
-.slider-one p:nth-child(3) {
-    font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-	font-size: 2.5rem;
-}
-.slider-one p:Snth-child(4) {
-	font-size: 1.06rem;
-	font-weight: bold;
-}
-.slider-one a {
+.slider-one-subcontent a {
 	background: #00dbaa;
 }
 .slider-two {
@@ -120,13 +131,6 @@ body {
 	width: 373px;
 	line-height: 30px;
 }
-
-
-/*.slider-one,
-.slider-two,
-.slider-three {
-	padding: 0 14.50rem; 
-}*/
 /*
 
 	INFO
@@ -193,10 +197,11 @@ body {
 	color: #626262;
 	line-height: 1.62rem;
 	background: rgb(244,244,244);
-	padding: 3.12em 0;
+	padding: 3.12em 3.12rem;
 }
 .info-actions ul li p {
 	margin-bottom: 0;
+    text-align: justify;
 }
 .btn-seeplans {
 	background: #17C7A0;
@@ -439,10 +444,69 @@ body {
 .footer p {
 	margin-bottom: 0;
 }
+/*
 
-@media screen and (max-width: 1199px) { 
+	MEDIAS
+
+*/
+@media screen and (max-width: 1680px) { 
 	.info-actionsimgpc {
-		padding: 4.7em 0;
+		padding: 4.75em 0;
+	}
+}
+@media screen and (max-width: 1547px) { 
+	.img-ipad {
+	    right: 3rem;
+	}
+	.slider-one-subcontent {
+	    width: 1064px;
+	    padding: 4rem 7rem 0;
+	}
+	.checkmark-iconSlider {
+	    left: 1rem;
+	}
+}
+@media screen and (max-width: 1412px) { 
+	.img-ipad {
+	    right: 4rem;
+	    padding-top: 1.5rem;
+	}
+	.slider-one-subcontent {
+	    width: 1013px;
+	    bottom: 0rem;
+	}
+	.checkmark-iconSlider {
+	    left: -3rem;
+	}
+	.slider-one-content {
+	    padding: 12rem 0;
+	}
+}
+@media screen and (max-width: 1330px) { 
+	.img-ipad {
+	    right: 7rem;
+	}
+	.slider-one-subcontent p {
+		font-size: 2rem;
+	    bottom: -1rem;
+	}
+	.checkmark-iconSlider {
+		font-size: 2.5rem;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.img-ipad {
+	    width: 429px;
+	} 
+	.slider-one-subcontent {
+	    width: 983px;
+	    right: 5rem;
+	}
+	.checkmark-iconSlider {
+	    left: 2rem;
+	}
+	.info-actionsimgpc {
+		padding: 5.5em 0;
 	}
 	.feature-bodythree {
 		letter-spacing: 0.06rem;
@@ -464,10 +528,28 @@ body {
 	.mobile-icon {
 		top: 5.2rem;
 	}
-
 }
-
+@media screen and (max-width: 1024px) {
+	.img-ipad {
+	    width: 410px;
+	    padding-top: 2.5rem;
+	} 
+	.slider-one-subcontent {
+	    right: 9rem;
+	}
+	.checkmark-iconSlider {
+	    left: 3.5rem;
+	}
+}
 @media screen and (max-width: 991px) {
+	.img-ipad {
+	    width: 345px;
+	    right: 7rem;
+	    padding-top: 4rem;
+	}
+	.slider-one-subcontent {
+	    right: 9rem;
+	}
 	.info-imgcsd {
 		padding: 0 0 3.12rem;
 		text-align: center;
@@ -536,7 +618,21 @@ body {
 	    left: 5.5rem;
 	}
 } 
-
+@media screen and (max-width: 768px) {
+	.img-ipad {
+	    width: 247px;
+	    padding-top: 7rem;
+	    right: 5rem;
+	}
+	.checkmark-iconSlider {
+	    left: 6rem;
+	}
+	.slider-one-subcontent {
+	    right: 11rem;
+	    top: 1rem;
+	    width: 894px;
+	}
+}
 @media screen and (max-width: 767px) {
 	.info {
 		margin: 0 4rem;
@@ -556,8 +652,13 @@ body {
 	.checkmark-text {
 	    left: 6rem;
 	}
+	.plans-starter {
+	    height: 570px;
+	}
+	.plans-starter {
+	    height: 630spx;
+	}
 }
-
 @media screen and (max-width: 736px) {
 	.rds-icon {
 	    right: 5.5rem;
@@ -584,7 +685,6 @@ body {
 		height: 622px;
 	}
 }
-
 @media screen and (max-width: 640px) {
 	.info-actionsimgpc img {
 		width: 315px; 
@@ -593,7 +693,6 @@ body {
 	    left: 2rem;
 	}
 }
-
 @media screen and (max-width: 600px) {
 	.loglog {
 	    left: 2rem;
@@ -608,7 +707,7 @@ body {
 	    right: 4.45rem;
 	}
 	.checkmark-text {
-	    left: 1.6rem;
+	    left: 2.9rem;
 	}
 	.plans-starter {
 		height: 550px;
@@ -643,6 +742,15 @@ body {
 	}
 	.plans-enterprise {
 	    height: 706px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.plans-starter {
+	    height: 568px;
+	}
+	.plans-medium,
+	 .plans-advanced {
+	  height: 675px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -712,6 +820,9 @@ body {
 	}
 	.mobile-icon {
 	    left: 1.1rem;
+	}
+	.btn-prueba {
+		font-size: 0.8rem;
 	}
 }
 @media screen and (max-width: 375px) {
