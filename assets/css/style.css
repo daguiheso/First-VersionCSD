@@ -6891,7 +6891,7 @@ body {
   color: #FFFFFF;
   padding: 1.25em 2.50em;
   text-decoration: none;
-  transition: width 5s;
+  border-style: none;
 }
 .btn-seeplans:hover {
   background: #198B72;
