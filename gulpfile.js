@@ -7,6 +7,7 @@ elixir(function(mix) {
     mix.scripts([
     	"jquery/jquery.min.js",
     	"bootstrap/bootstrap.min.js",
+    	"sweetalert2/sweetalert2.min.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 

@@ -7066,7 +7066,7 @@ body {
   padding-top: 0.1rem;
 }
 .btn-contact {
-  background: #17C7A0;
+  background: #1EA486;
   padding: .6rem 2.2rem;
   font-size: 0.88rem;
   color: #FFFFFF;
@@ -7074,6 +7074,7 @@ body {
   position: absolute;
   right: 3.1rem;
   text-decoration: none;
+  border-style: none;
 }
 .btn-contact:hover {
   background: #198B72;
@@ -7119,6 +7120,43 @@ body {
 }
 .footer p {
   margin-bottom: 0;
+}
+/*
+
+	MODAL
+
+*/
+.title-modal {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF;
+  font-size: 1.50rem;
+  text-align: center;
+}
+.subtitle-modal {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+.backgmodal {
+  background: url('/assets/images/modal.jpg');
+}
+.mginput {
+  margin: .5rem 0;
+}
+.btn-enviar {
+  background: #1EA486;
+  padding: .6rem 6.6rem;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  border-style: none;
+}
+.btn-enviar:hover {
+  background: #198B72;
+  color: #FFFFFF;
 }
 /*
 
