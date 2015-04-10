@@ -18,7 +18,7 @@ $(function(){
         	type: 'success',
         	cancelButtonColor: '#d33',
         	showConfirmButton: 'false',
-        	width: '310',
+        	width: '310'
         });
     });
 });
