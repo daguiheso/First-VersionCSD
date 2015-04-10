@@ -7270,7 +7270,7 @@ body {
   .starter-body,
   .medium-body,
   .advanced-body {
-    padding: 3.2rem;
+    padding: 3.2rem 0.5rem;
   }
   .plans-starter,
   .plans-medium,
