@@ -23,6 +23,9 @@ body {
 {
 	  text-align: center;
 }
+.color-w {
+		color: #FFF !important;
+}
 /*
 
 	HEADER
@@ -232,7 +235,6 @@ body {
     color: #626262;
     line-height: 1.62rem;
     margin-bottom: 0;
-    text-align: justify;
 }
 .info-imgcsd {
     padding: 3.12rem 0;
@@ -273,7 +275,6 @@ body {
 }
 .info-actions ul li p {
 	  margin-bottom: 0;
-    text-align: justify;
 }
 .btn-seeplans {
 	  background: #17C7A0;
@@ -312,9 +313,6 @@ body {
 .feature-head:hover {
 	  background: #17C7A0;
 	  color: #FFF;
-}
-.feature-body {
-    text-align: justify;
 }
 .feature-body p {
 	  margin-bottom: 0;
@@ -388,6 +386,9 @@ body {
     padding: 0 0 3rem 0;
     height: 700px;
 }
+.plans-medium {
+		background: #17C7A0;
+}
 .starter-head,
 .medium-head,
 .advanced-head,
@@ -404,6 +405,14 @@ body {
 	  background: #17C7A0;
 	  text-align: center;
 	  color: #FFF;
+}
+.medium-body {
+		background: #198B72;
+}
+.starter-body:hover,
+.medium-body:hover,
+.advanced-body:hover {
+	  background: #198B72;
 }
 .starter-body p:nth-child(1),
 .medium-body p:nth-child(1),
@@ -448,6 +457,9 @@ body {
   	text-align: center;
   	color: #FFF;
   	position: relative;
+}
+.enterprise-body:hover {
+	  background: #198B72;
 }
 .enterprise-body p:nth-child(1) {
 	  font-size: 1.8rem;
@@ -560,23 +572,17 @@ body {
 	ANIMATIONS
 
 */
-.zoom{
-    transition: height .1s, transform .1s;
-    -moz-transition:  height .1s, -moz-transform .1s;
-    -webkit-transition: height .1s, -webkit-transform .1s;
-    -o-transition: height .1s,-o-transform .1s;       
-}
-.zoom:hover{
-    transform : scale(1.1);
-    -moz-transform : scale(1.1);      
-    -webkit-transform : scale(1.1);   
-    -o-transform : scale(1.1);       
-}
+
 /*
 
 	MEDIAS DESKTOP
 
 */
+@media (min-width: 1681px) and (max-width: 4000px) {
+		.info-actionsimgpc {
+		  padding: 4.75em 0;
+		}
+}
 @media screen and (min-width: 2500px) { 
 		.slider-three-content {
 				padding: 0 19rem;
@@ -673,6 +679,26 @@ body {
 			left: -9.5rem;
 	}
 }
+@media screen and (min-width: 992px) { 
+		.preactive {
+			  margin-top: -2rem;
+		}
+		.zoom{
+		    transition: height .1s, transform .1s;
+		    -moz-transition:  height .1s, -moz-transform .1s;
+		    -webkit-transition: height .1s, -webkit-transform .1s;
+		    -o-transition: height .1s,-o-transform .1s;       
+		}
+		.zoom:hover{
+		    transform : scale(1.1);
+		    -moz-transform : scale(1.1);      
+		    -webkit-transform : scale(1.1);   
+		    -o-transform : scale(1.1);   
+		}
+		.heightextra{
+			  height: 768px;
+		}
+}
 @media screen and (max-width: 991px) {
 	.slider-one-subcontent {
 	    left: -11.5rem;
@@ -706,7 +732,6 @@ body {
 	}
 	.info-actions {
 		  padding: 3.12em 3.12em 3.12em 2em;
-		  text-align: justify;
 	}
 	.random-icon {
 		  font-size: 4rem;
