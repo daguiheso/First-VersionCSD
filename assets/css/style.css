@@ -7004,6 +7004,11 @@ body {
   border-bottom: 1px dotted transparent !important;
   padding-top: 2rem !important;
 }
+.note-medium {
+  color: #FFF !important;
+  border-bottom: 1px dotted transparent !important;
+  padding-top: 2rem !important;
+}
 /* STARTER - MEDIUM - ADVANCED*/
 .plans-starter,
 .plans-medium,
@@ -7025,6 +7030,10 @@ body {
   color: #626262;
   text-align: center;
   padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 57px;
+  line-height: 30px;
 }
 .starter-body,
 .medium-body,
