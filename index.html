@@ -307,16 +307,34 @@
 			    	<input  type= "text" class= "form-control mginput"  placeholder= "Empresa"/> 
 			    	<input  type= "email" title="El correo es requerido" class= "form-control mginput"  placeholder= "Email*" required/> 
 			    	<input  type= "tel" class= "form-control mginput"  placeholder= "Télefono"/> 
-			    	<input type="text" name="pais" id="pais" list="paises" class= "form-control mginput" placeholder= "Seleccione su País" >
-				    	<datalist id="paises">
-				    	<option value="España" />
-				    	<option value="México" />
-				    	<option value="Argentina" />
-				    	<option value="Perú" />
-				    	<option value="Colombia" />
-				    	<option value="Otro país" /> 
-				    	</datalist>
+				    <select name="mycountry" class= "form-control mginput" placeholder= "Seleccione su País">
+				        <option value="Select">Seleccione su País<option/>
+				        <option value="Argentina">Argentina<option/>
+				        <option value="Bolivia">Bolivia<option/>
+				        <option value="Chile">Chile<option/>
+				        <option value="Colombia">Colombia<option/>
+				        <option value="Costa Rica">Costa Rica<option/>
+				        <option value="Cuba">Cuba<option/>
+				        <option value="Ecuador">Ecuador<option/>
+				        <option value="El Salvador">El Salvador<option/>
+				        <option value="España">España<option/>
+				        <option value="Guatemala">Guatemala<option/>
+				        <option value="Honduras">Honduras<option/>
+				        <option value="México">México<option/>
+				        <option value="Nicaragua">Nicaragua<option/>
+				        <option value="Panamá">Panamá<option/>
+				        <option value="Paraguay">Paraguay<option/>
+				        <option value="Perú">Perú<option/>
+				        <option value="Puerto Rico">Puerto Rico<option/>
+				        <option value="República Dominicana">República Dominicana<option/>
+				        <option value="Uruguay">Uruguay<option/>
+				        <option value="Venezuela">Venezuela<option/>
+				        <option value="Otro país">Otro país<option/> 
+				    </select>
 			    	<textarea class="form-control" rows="3"></textarea>
+			    	<label class="check-conditions">
+			    	      <input type="checkbox" required title="No ha aceptado terminos y condiciones"> Declaro conocer y aceptar las presentes condiciones sobre el uso de información y todo lo relacionado con la ley del <a href="http://reddesignsystems.com/terminos-y-condiciones" target="_black">Habeas Data.</a> 
+			    	</label>
 			    	<input type="submit" class="btn btn-default btn-enviar" value="ENVIAR"> 
 	    		</form>
 	    	</div>
