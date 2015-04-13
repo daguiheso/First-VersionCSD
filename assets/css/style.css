@@ -7749,5 +7749,51 @@ body {
     right: 2rem;
   }
 }
+/*
+
+	HEADER - REGISTER
+
+*/
+.header-register {
+  background: #17c7a0;
+  height: 5.19em;
+  overflow: hidden;
+  padding: 0 4.25em;
+}
+.header-register nav {
+  margin: 0;
+  position: relative;
+}
+.header-register nav img {
+  width: 90px;
+  height: auto;
+  position: relative;
+  top: .25em;
+  left: 0em;
+  float: left;
+}
+.header-register nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-register nav ul li {
+  float: left;
+}
+.header-register nav ul li:nth-child(4) {
+  position: absolute;
+  right: 6em;
+}
+.header-register nav ul li:nth-child(5) {
+  position: absolute;
+  right: 0em;
+}
+.header-register nav ul li a {
+  color: #FFF;
+  line-height: 5.19rem;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
