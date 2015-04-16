@@ -270,7 +270,8 @@ body {
 .info-actions ul li p {
 	  margin-bottom: 0;
 }
-.btn-seeplans {
+.btn-seeplans,
+.btn-probar {
 	  background: #17C7A0;
 	  padding: 1.25em 2rem;
 	  font-size: 1rem;
@@ -280,9 +281,13 @@ body {
 	  text-decoration: none;
 	  border-style: none;
 }
-.btn-seeplans:hover {
+.btn-seeplans:hover,
+.btn-probar:hover {
 	  background: #198B72;
 	  color: #FFFFFF;
+}
+.btn-probar {
+	  margin-left: 1rem;
 }
 /*
 
@@ -336,7 +341,7 @@ body {
 }
 .modul-icon {
 	  position: relative;
-	  font-size: 4rem;
+	  font-size: 4.5rem;
 }
 .modul-text {
 	  position: relative;
@@ -362,7 +367,7 @@ body {
 	  font-size: 2.50rem;
 	  color: #17C7A0;
 	  text-align: center;
-	  padding: 2.50rem 0;
+	  padding: 4rem 0 6rem 0;
 	  margin-bottom: 0;
 }
 .note {
@@ -404,7 +409,7 @@ body {
 .starter-body,
 .medium-body,
 .advanced-body {
-	  padding: 2.5rem;
+	  padding: 2.1rem;
 	  background: #17C7A0;
 	  text-align: center;
 	  color: #FFF;
@@ -507,7 +512,7 @@ body {
 }
 .btn-prueba {
 	  background: #17C7A0;
-	  padding: 1.25em 2.50em;
+	  padding: 1.9em 2.50em;
 	  font-size: 1rem;
 	  color: #FFFFFF;
 	  font-weight: bold;
@@ -659,7 +664,11 @@ body {
 			width: 400px;
 	}
 	.info-actionsimgpc {
-		  padding: 5.5em 0;
+		  padding: 7.95em 0;
+	}
+	.btn-probar {
+	    margin-left: 0; 
+	    margin-top: 1rem;
 	}
 	.feature-bodythree {
 		  letter-spacing: 0.06rem;
@@ -752,6 +761,13 @@ body {
 	}
 	.info-actionsimgpc {
 	 	  padding: 3.12em 0 0;
+	}
+	.btn-seeplans {
+			margin-left: 1rem;
+	}
+	.btn-probar {
+	    margin-left: 1rem; 
+	    margin-top: 0;
 	}
 	.info-actions {
 		  padding: 3.12em 3.12em 3.12em 2em;
@@ -883,6 +899,11 @@ body {
 	    right: 5.5rem;
 	}
 }
+@media screen and (max-width: 673px) {
+	.btn-probar {
+  		margin-top: 1rem;
+	}
+}
 @media screen and (max-width: 667px) {
 	.loglog {
 	    left: 3.5rem;
@@ -907,6 +928,7 @@ body {
 @media screen and (max-width: 640px) {
 	.info-actionsimgpc img {
 		  width: 315px; 
+		  height: 295px;
 	}
 	.checkmark-text {
 	    left: 2rem;
@@ -998,7 +1020,7 @@ body {
 		  margin: 0 1rem;
 	}
 	.info-actionsimgpc img{
-		  height: 240px;
+		  height: 230px;
 	}
 	.plans {
 	    margin: 0 1rem;
