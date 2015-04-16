@@ -7293,7 +7293,7 @@ body {
 	HEADER
 
 */
-.header {
+.header-landing {
   font-size: 6em;
   height: 162px;
 }
@@ -7789,7 +7789,7 @@ body {
 	FOOTER
 
 */
-.footer {
+.footer-landing {
   height: 3.75rem;
   background: #17C7A0;
   text-align: center;
@@ -7797,7 +7797,7 @@ body {
   font-size: .8rem;
   line-height: 3.75rem;
 }
-.footer p {
+.footer-landing p {
   margin-bottom: 0;
 }
 .modal textarea {
@@ -8134,7 +8134,7 @@ body {
   .plans {
     margin: 0 10rem;
   }
-  .header {
+  .header-landing {
     font-size: 5em;
   }
   .loglog {
@@ -8262,7 +8262,7 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  .header {
+  .header-landing {
     font-size: 4em;
   }
   .loglog {
@@ -8312,7 +8312,7 @@ body {
   }
 }
 @media screen and (max-width: 384px) {
-  .header {
+  .header-landing {
     font-size: 3.6em;
   }
   .rds-icon {
@@ -8351,7 +8351,7 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
-  .header {
+  .header-landing {
     height: 130px;
     font-size: 2.6em;
   }
@@ -8525,6 +8525,11 @@ body {
 .mgbtn0 {
   margin-bottom: 0;
 }
+/*
+
+	MEDIAS QUERYS - REGISTER
+
+*/
 @media screen and (max-width: 900px) {
   .footer-global p {
     margin-right: 2rem;
@@ -8547,7 +8552,7 @@ body {
 }
 /*
 
-	HEADER - REGISTER
+	HEADER - LOGIN
 
 */
 .header-register {
@@ -8593,7 +8598,7 @@ body {
 }
 /*
 
-	FORM - REGISTER
+	FORM - LOGIN
 
 */
 .login {
@@ -8653,7 +8658,7 @@ body {
 }
 /*
 
-	FOOTER - REGISTER
+	FOOTER - LOGIN
 
 */
 .footer-register {
@@ -8682,7 +8687,7 @@ body {
 }
 /*
 
-	MEDIAS QUERYS
+	MEDIAS QUERYS - LOGIN
 
 */
 @media screen and (max-width: 900px) {
