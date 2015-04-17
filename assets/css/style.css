@@ -7290,6 +7290,79 @@ body {
 }
 /*
 
+	HEADER - GLOBAL
+
+*/
+.header-global {
+  background: #17c7a0;
+  height: 5.19em;
+  overflow: hidden;
+  padding: 0 4.25em;
+}
+.header-global nav {
+  margin: 0;
+  position: relative;
+}
+.header-global nav img {
+  width: 90px;
+  height: auto;
+  position: relative;
+  top: .25em;
+  left: 0em;
+  float: left;
+}
+.header-global nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-global nav ul li {
+  float: left;
+}
+.header-global nav ul li:nth-child(4) {
+  position: absolute;
+  right: 6em;
+}
+.header-global nav ul li:nth-child(5) {
+  position: absolute;
+  right: 0em;
+}
+.header-global nav ul li a {
+  color: #FFF;
+  line-height: 5.19rem;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 14px;
+}
+.hamburguer-menu {
+  position: absolute;
+  right: 4.5rem;
+  line-height: 5.19rem;
+  font-size: 2em;
+  display: none;
+}
+@media screen and (max-width: 748px) {
+  .header-global {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 630px) {
+  .header-global nav ul {
+    display: none;
+  }
+  .hamburguer-menu {
+    display: block;
+  }
+  .header-global {
+    padding: 0 5em;
+  }
+  .footer-global p {
+    display: block;
+    margin: 0;
+  }
+}
+/*
+
 	HEADER
 
 */
