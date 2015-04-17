@@ -1,3 +1,11 @@
+@import "CSD/variables.less";
+@import "CSD/fonts.less";
+@import "CSD/fonts2.less";
+@import "CSD/landing.less";
+@import "CSD/register.less";
+@import "CSD/login.less";
+@import "CSD/home.less";
+
 html {
 	font-size: 16px !important;
 }
@@ -20,18 +28,24 @@ body {
 	text-align: center;
 }
 .color-w {
-	color: #FFF !important;
+	color: @white-csd !important;
 }
 .martop {
 	margin-top: 1.5rem;
 }
+.mt0 {
+	margin-top: 0;
+}
+.mb0 {
+	margin-bottom: 0;
+}
 /*
 
-	HEADER - GLOBAL
+	HEADER - CSD
 
 */
 .header-global {
-	background: rgb(23, 199, 160);
+	background: @bgverde-csd;
 	height: 5.19em;
     overflow: hidden;
     padding: 0 4.25em;
@@ -69,7 +83,7 @@ body {
 	line-height: 5.19rem;
 	text-decoration: none;
 	margin-left: 2em;
-	font-size: 14px;
+	font-size: 0.88rem;
 }
 .hamburguer-menu {
 	position: absolute;
@@ -97,4 +111,43 @@ body {
 	    display: block; 
 	    margin: 0;
 	}
+}
+/*
+
+	ALERT - CSD
+
+*/
+.alert-csd {
+	border: .14em solid @border-alert-csd;
+	color: @text-alert-csd;
+	padding: 1.3em 4em;
+	background: white;
+	width: 90%;
+	margin: 0 auto;
+}
+.sign-info {
+	font-size: 4rem;
+	float: left;
+	line-height: 4rem;
+	margin-right: 2rem;
+	color: @text-alert-csd;
+}
+/*
+
+	BUTTON - CSD
+
+*/
+.btn-csd {
+	background: @buttongreen-csd;
+    padding: .8rem 1.6rem;
+	font-size: 0.88rem;
+	color: @white-csd;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 1rem;
+	border-style: none;
+}
+.btn-csd:hover {
+	background: @butongreen-hover-csd;
+	color: @white-csd;
 }
