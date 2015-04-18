@@ -8476,25 +8476,25 @@ button.close {
 	FOOTER - REGISTER
 
 */
-.footer-global {
+.footer-register {
   text-align: center;
   margin-top: 4.5rem;
 }
-.footer-global p {
+.footer-register p {
   color: black;
   font-size: .8rem;
   display: inline-block;
   margin-right: 14rem;
   font-weight: bold;
 }
-.footer-global a {
+.footer-register a {
   color: black;
   font-size: .8rem;
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
 }
-.footer-global a:nth-child(3) {
+.footer-register a:nth-child(3) {
   margin-left: 2rem;
 }
 .mgbtn0 {
@@ -8636,25 +8636,25 @@ button.close {
 	FOOTER - LOGIN
 
 */
-.footer-register {
+.footer-login {
   text-align: center;
   margin-top: 4.5rem;
 }
-.footer-register p {
+.footer-login p {
   color: black;
   font-size: .8rem;
   display: inline-block;
   margin-right: 14rem;
   font-weight: bold;
 }
-.footer-register a {
+.footer-login a {
   color: black;
   font-size: .8rem;
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
 }
-.footer-register a:nth-child(3) {
+.footer-login a:nth-child(3) {
   margin-left: 2rem;
 }
 .mgbtn0 {
@@ -8697,6 +8697,16 @@ button.close {
 .panel-heading-cuenta h2 {
   font-size: 1.50em;
   padding-left: 2rem;
+  margin: .9rem 0;
+  padding: 0 1.3rem;
+  font-weight: 600;
+}
+.fs-min {
+  font-size: 0.88rem;
+}
+.btn-confdom {
+  margin-left: .45rem;
+  width: auto;
 }
 html {
   font-size: 16px !important;
@@ -8728,6 +8738,12 @@ body {
 }
 .mb0 {
   margin-bottom: 0;
+}
+.csd-color {
+  color: #17c7a0;
+}
+.fw-bold {
+  font-weight: bold;
 }
 /*
 
@@ -8801,6 +8817,15 @@ body {
     display: block;
     margin: 0;
   }
+}
+/*
+
+	FOOTER - CSD
+
+*/
+.footer-global {
+  font-size: .8rem;
+  margin-left: 5.5rem;
 }
 /*
 
