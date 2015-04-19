@@ -42,6 +42,9 @@ body {
 .csd-color {
 	color: @verde-csd;
 }
+.red {
+	color: red;
+}
 .fw-bold {
 	font-weight: bold;
 }
@@ -98,26 +101,6 @@ body {
 	font-size: 2em;
 	display: none;
 }
-@media screen and (max-width: 748px) {
-	.header-global {
-	    padding: 0 1.25em;
-	}
-}
-@media screen and (max-width: 630px) {
-	.header-global nav ul {
-		display: none;
-	}
-	.hamburguer-menu {
-		display: block;
-	}
-	.header-global {
-	    padding: 0 5em;
-	}
-	.footer-global p {
-	    display: block; 
-	    margin: 0;
-	}
-}
 /*
 
 	FOOTER - CSD
@@ -147,6 +130,9 @@ body {
 	margin-right: 2rem;
 	color: @text-alert-csd;
 }
+.alert-csd p {
+	padding-left: 6rem;
+}
 /*
 
 	BUTTON - CSD
@@ -165,4 +151,45 @@ body {
 .btn-csd:hover {
 	background: @butongreen-hover-csd;
 	color: @white-csd;
+}
+/*
+
+	MEDIAS QUERYS - CSD
+
+*/
+@media screen and (max-width: 1199px) {
+	.sign-info {
+		line-height: 7rem;
+	}
+}
+@media screen and (max-width: 748px) {
+	.header-global {
+	    padding: 0 1.25em;
+	}
+}
+@media screen and (max-width: 732px) {
+	.alert-csd {
+		padding: 1.3em 2em;
+	}
+	.sign-info {
+		display: none;
+	}
+	.alert-csd p {
+		padding-left: 0rem;
+	}
+}
+@media screen and (max-width: 630px) {
+	.header-global nav ul {
+		display: none;
+	}
+	.hamburguer-menu {
+		display: block;
+	}
+	.header-global {
+	    padding: 0 5em;
+	}
+	.footer-global p {
+	    display: block; 
+	    margin: 0;
+	}
 }

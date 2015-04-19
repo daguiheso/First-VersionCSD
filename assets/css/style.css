@@ -8742,6 +8742,9 @@ body {
 .csd-color {
   color: #17c7a0;
 }
+.red {
+  color: red;
+}
 .fw-bold {
   font-weight: bold;
 }
@@ -8798,26 +8801,6 @@ body {
   font-size: 2em;
   display: none;
 }
-@media screen and (max-width: 748px) {
-  .header-global {
-    padding: 0 1.25em;
-  }
-}
-@media screen and (max-width: 630px) {
-  .header-global nav ul {
-    display: none;
-  }
-  .hamburguer-menu {
-    display: block;
-  }
-  .header-global {
-    padding: 0 5em;
-  }
-  .footer-global p {
-    display: block;
-    margin: 0;
-  }
-}
 /*
 
 	FOOTER - CSD
@@ -8847,6 +8830,9 @@ body {
   margin-right: 2rem;
   color: #ffb885;
 }
+.alert-csd p {
+  padding-left: 6rem;
+}
 /*
 
 	BUTTON - CSD
@@ -8865,6 +8851,47 @@ body {
 .btn-csd:hover {
   background: #198b72;
   color: #ffffff;
+}
+/*
+
+	MEDIAS QUERYS - CSD
+
+*/
+@media screen and (max-width: 1199px) {
+  .sign-info {
+    line-height: 7rem;
+  }
+}
+@media screen and (max-width: 748px) {
+  .header-global {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 732px) {
+  .alert-csd {
+    padding: 1.3em 2em;
+  }
+  .sign-info {
+    display: none;
+  }
+  .alert-csd p {
+    padding-left: 0rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .header-global nav ul {
+    display: none;
+  }
+  .hamburguer-menu {
+    display: block;
+  }
+  .header-global {
+    padding: 0 5em;
+  }
+  .footer-global p {
+    display: block;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
