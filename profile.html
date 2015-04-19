@@ -7,6 +7,116 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<!-- 
+
+		HEADER - HOME
+		 
+-->
+	<header class="header-global">
+		<a class="glyphicon glyphicon-menu-hamburger hamburguer-menu"></a>
+		<nav>
+			<img src="assets/images/csd-b.png">
+			<ul>
+				<li><a href="">MI CUENTA</a></li>
+				<li><a href="">MI FACTURA</a></li>
+				<li><a href="">MÓDULOS</a></li>
+				<li><a href="">Ingresar</a></li>
+				<li><a href="">Registrarse</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="container">
+		<div class="col-md-12">
+		       <div class="panel panel-default">
+		           <div class="panel-body">
+		               <div role="tabpanel">
+		                   <!-- Nav tabs -->
+		                   <ul class="nav nav-tabs" role="tablist">
+		                       <li role="presentation" class="active"><a href="#editProfile" aria-controls="editProfile" role="tab" data-toggle="tab">Editar Perfil</a></li>
+		                       <li role="presentation"><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Facturación</a></li>
+		                   </ul>
+		                   <!-- Tab panes -->
+		                   <div class="tab-content">
+		                       <div role="tabpanel" class="tab-pane active" id="editProfile">
+		                           <div class="col-md-6">
+		                               {!! Form::model($user, []) !!}
+		                               <div class="form-group">
+		                                   {!! Form::label('name', 'Nombre: ') !!}
+		                                   {!! Form::text('name', null, ['class' => 'form-control']) !!}
+		                                   @if($errors->has('name'))
+		                                   <span class="text-danger">{{$errors->first('name')}}</span>
+		                                   @endif
+		                               </div>
+		                               <div class="form-group">
+		                                   {!! Form::label('email', 'Email: ') !!}
+		                                   {!! Form::text('email', null, ['class' => 'form-control']) !!}
+		                                   @if($errors->has('email'))
+		                                   <span class="text-danger">{{$errors->first('email')}}</span>
+		                                   @endif
+		                               </div>
+		                               <div class="form-group">
+		                                   {!! Form::label('company_name', 'Nombre de la compañia: ') !!}
+		                                   {!! Form::text('company_name', null, ['class' => 'form-control']) !!}
+		                                   @if($errors->has('company_name'))
+		                                   <span class="text-danger">{{$errors->first('company_name')}}</span>
+		                                   @endif
+		                               </div>
+		                               <div class="form-group">
+		                                   {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
+		                               </div>
+		                               {!! Form::close() !!}
+		                           </div>
+		                       </div>
+		                       <div role="tabpanel" class="tab-pane" id="billing">
+		                           <hr>
+		                           <div class="col-md-12">
+		                               @if($user->subscribed() && !$user->onGracePeriod() && !$user->onTrial())
+		                               <strong>Plan Actual: </strong>{{$user->present()->userPlan}}<br />
+		                               <strong>Próximo Pago: </strong>{{$user->upcomingInvoice()->date()->format('m/d/Y')}}<br />
+		                               @elseif($user->onTrial())
+		                               <div class="alert alert-info">
+		                                   <p>Estas en periodo de prueba</p>
+		                               </div>
+		                               @endif
+		                               @if(!$user->onTrial())
+		                               <hr>
+		                               <h3>Recibos</h3>
+		                               <div class="table-responsive">
+		                                   <table class="table table-hover">
+		                                       <thead>
+		                                       <th>Fecha</th>
+		                                       <th>Valor</th>
+		                                       <th></th>
+		                                       </thead>
+		                                       <tbody>
+		                                           @foreach($user->invoices() as $invoice)
+		                                           <tr>
+		                                               <td>{{$invoice->date()->format('m/d/Y')}}</td>
+		                                               <td>{{$invoice->dollars()}}</td>
+		                                               <td>
+		                                                   <a href="{{url('me/download-invoice/'.$invoice->id)}}" class="btn btn-primary"><i class="fa fa-file"></i> Ver recibo</a>
+		                                               </td>
+		                                           </tr>
+		                                           @endforeach
+		                                       </tbody>
+		                                   </table>
+		                               </div>
+		                               @endif
+		                           </div>
+		                       </div>
+		                   </div>
+		               </div>
+		           </div>
+		       </div>
+	</section>
+<!-- 
+
+	    FOOTER - HOME
+	     
+--> 
+    <footer class="footer-global container">
+    	<p>&copy; 2015 Cloud Service Desk by Red Design Systems</p>
+    </footer>
 	<script type="text/javascript" src="assets/js/all.js"></script>
 </body>
 </html>
