@@ -8506,12 +8506,12 @@ button.close {
 
 */
 @media screen and (max-width: 900px) {
-  .footer-global p {
+  .footer-register p {
     margin-right: 2rem;
   }
 }
 @media screen and (max-width: 630px) {
-  .footer-global p {
+  .footer-register p {
     display: block;
     margin: 0;
   }
@@ -8666,12 +8666,12 @@ button.close {
 
 */
 @media screen and (max-width: 900px) {
-  .footer-register p {
+  .footer-login p {
     margin-right: 2rem;
   }
 }
 @media screen and (max-width: 630px) {
-  .footer-register p {
+  .footer-login p {
     display: block;
     margin: 0;
   }
@@ -8701,12 +8701,12 @@ button.close {
   padding: 0 1.3rem;
   font-weight: 600;
 }
-.fs-min {
-  font-size: 0.88rem;
-}
 .btn-confdom {
   margin-left: .45rem;
   width: auto;
+}
+.mod-title {
+  margin-top: 16px;
 }
 html {
   font-size: 16px !important;
@@ -8744,9 +8744,21 @@ body {
 }
 .red {
   color: red;
+  top: .2rem;
+}
+.white {
+  color: white;
 }
 .fw-bold {
   font-weight: bold;
+}
+.fs-min {
+  font-size: 0.88rem;
+}
+.ff {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  top: -0.1rem;
 }
 /*
 
@@ -8808,7 +8820,6 @@ body {
 */
 .footer-global {
   font-size: .8rem;
-  margin-left: 5.5rem;
 }
 /*
 
