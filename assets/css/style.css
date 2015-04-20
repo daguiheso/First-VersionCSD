@@ -8797,6 +8797,11 @@ button.close {
     position: initial;
   }
 }
+/*
+
+	PANEL - MODULE
+
+*/
 .panel-heading-modules {
   color: #17c7a0 !important;
 }
@@ -8820,6 +8825,9 @@ button.close {
   float: left;
   max-width: 70%;
 }
+.module-descr a {
+  text-decoration: none;
+}
 .module-prices {
   display: inline-block;
   position: relative;
@@ -8833,6 +8841,38 @@ button.close {
   position: absolute;
   top: -0.6rem;
   left: -0.8rem;
+}
+/*
+
+	MEDIAS QUERYS - MODULES
+
+*/
+@media screen and (max-width: 991px) {
+  .module-icon {
+    margin: 4rem 1rem;
+  }
+  .module-descr {
+    max-width: 60%;
+  }
+  .module-prices {
+    line-height: 14rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 722px) {
+  .module-descr {
+    max-width: initial;
+    float: initial;
+    display: inline-block;
+  }
+  .module-prices {
+    line-height: 4rem;
+    display: inline-block;
+    margin-left: .8rem;
+  }
+  .module-icon {
+    margin: 1rem 1rem;
+  }
 }
 html {
   font-size: 16px !important;
