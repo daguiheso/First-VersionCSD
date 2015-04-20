@@ -8708,6 +8708,43 @@ button.close {
 .mod-title {
   margin-top: 16px;
 }
+.panel-heading-perfil {
+  color: #17c7a0 !important;
+}
+.panel-heading-perfil h2 {
+  font-size: 1.50em;
+  padding-left: 2rem;
+  margin: .9rem 0;
+  padding: 0 1.3rem;
+  font-weight: 600;
+}
+.delete-susc p {
+  width: 50%;
+  display: inline-block;
+}
+.delete-susc button {
+  position: relative;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+@media screen and (max-width: 991px) {
+  .delete-susc button {
+    bottom: 1.9rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .delete-susc p {
+    width: 61%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .delete-susc p {
+    width: 100%;
+  }
+  .delete-susc button {
+    position: initial;
+  }
+}
 html {
   font-size: 16px !important;
 }
@@ -8758,7 +8795,7 @@ body {
 .ff {
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  top: -0.1rem;
+  top: -0.2rem;
 }
 /*
 
@@ -8820,6 +8857,8 @@ body {
 */
 .footer-global {
   font-size: .8rem;
+  position: relative;
+  bottom: -1.5rem;
 }
 /*
 
@@ -8860,6 +8899,20 @@ body {
   border-style: none;
 }
 .btn-csd:hover {
+  background: #198b72;
+  color: #ffffff;
+}
+.btn-csd-small {
+  background: #1ea486;
+  padding: .5rem 1.6rem;
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  border-style: none;
+}
+.btn-csd-small:hover {
   background: #198b72;
   color: #ffffff;
 }
