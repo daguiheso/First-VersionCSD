@@ -9,7 +9,7 @@
 <body>
 <!-- 
 
-		HEADER - HOME
+	HEADER - HOME
 		 
 -->
 	<header class="header-global">
@@ -28,7 +28,7 @@
 	<section class="container martop fs-min">
 <!-- 
 
-			ALERT - PERIODO DE PRUEBA
+	ALERT - PERIODO DE PRUEBA
 			 
 -->
 		<div class="alert alert-info alert-csd">
@@ -38,7 +38,7 @@
 	  </div>
 <!-- 
 
-  			PANEL - PROFILE
+  PANEL - PROFILE
   			 
  -->
 		<div class="col-md-12 martop">
@@ -77,13 +77,10 @@
               <div role="tabpanel" class="tab-pane" id="billing">
                 <hr>
                 <div class="col-md-12">
-                  <strong>Plan Actual: </strong>{{$user->present()->userPlan}}<br />
-                  <strong>Próximo Pago: </strong>{{$user->upcomingInvoice()->date()->format('m/d/Y')}}<br />
-                  <div class="alert alert-info">
-                    <p>Estas en periodo de prueba</p>
-                  </div>
+                  <strong>Plan Actual: </strong> CSD Básico<br/>
+                  <strong>Próximo Pago: </strong> 05/09/2015<br/>
                   <hr>
-                  <h3>Recibos</h3>
+                  <h3 class="fw-bold">Recibos</h3>
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <thead>
@@ -93,10 +90,10 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>{{$invoice->date()->format('m/d/Y')}}</td>
-                          <td>{{$invoice->dollars()}}</td>
+                          <td>04/09/2015</td>
+                          <td>$100.00</td>
                           <td>
-                            <a href="{{url('me/download-invoice/'.$invoice->id)}}" class="btn btn-primary"><i class="fa fa-file"></i> Ver recibo</a>
+                            <a href="" class="btn btn-csd-small"><i class="fa fa-file"></i> Ver recibo</a>
                           </td>
                         </tr>
                       </tbody>
@@ -110,6 +107,11 @@
       </div>
       <hr>
       <div class="col-md-12">
+<!-- 
+
+  DELETE - SUSCRIPTION
+      	     
+--> 
       	<div class="delete-susc">
           <p>Puede eliminar su suscripción cuando lo desee, su información no se borrará, el sistema se mantendrá activo hasta el próximo ciclo de facturación.</p>
           <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove red"><span class="white ff"> Eliminar suscripcion</span></button>
@@ -119,7 +121,7 @@
 	</section>
 <!-- 
 
-	    FOOTER - HOME
+	FOOTER - HOME
 	     
 --> 
     <footer class="footer-global container martop">
