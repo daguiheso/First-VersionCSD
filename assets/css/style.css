@@ -8807,6 +8807,25 @@ button.close {
   padding: 0 1.3rem;
   font-weight: 600;
 }
+.module-icon {
+  background: #17c7a0;
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  float: left;
+  margin: 1.5rem 1rem;
+  position: relative;
+}
+.module-descr {
+  float: left;
+  max-width: 75%;
+}
+.module-prices {
+  display: inline-block;
+  position: relative;
+  line-height: 9rem;
+  font-size: 3rem;
+}
 html {
   font-size: 16px !important;
 }
