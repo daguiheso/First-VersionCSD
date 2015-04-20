@@ -8874,6 +8874,55 @@ button.close {
     margin: 1rem 1rem;
   }
 }
+/*
+
+	PANEL - INFO CV MODULE
+
+*/
+.panel-heading-infomod {
+  color: #17c7a0 !important;
+}
+.panel-heading-infomod h2 {
+  font-size: 1.50em;
+  padding-left: 2rem;
+  margin: .9rem 0;
+  padding: 0 1.3rem;
+  font-weight: 600;
+}
+.img-infocv {
+  width: 600px;
+}
+.list-caract {
+  margin-top: 2rem;
+}
+.list-caract ul {
+  list-style: none;
+}
+.list-caract ul li p {
+  padding-left: 1.3rem;
+}
+.info-mod-cost {
+  position: relative;
+  font-size: 3rem;
+}
+.info-mod-cost span {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 6.5rem;
+  top: .4rem;
+}
+.desc-infocv {
+  margin-top: 3rem;
+}
+.info-cv-border {
+  border-right: 1px solid #dddddd;
+}
+.column2 {
+  padding-left: 0;
+}
+.more-modules {
+  margin-left: 2.7rem;
+}
 html {
   font-size: 16px !important;
 }
