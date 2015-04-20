@@ -8797,6 +8797,16 @@ button.close {
     position: initial;
   }
 }
+.panel-heading-modules {
+  color: #17c7a0 !important;
+}
+.panel-heading-modules h2 {
+  font-size: 1.50em;
+  padding-left: 2rem;
+  margin: .9rem 0;
+  padding: 0 1.3rem;
+  font-weight: 600;
+}
 html {
   font-size: 16px !important;
 }
