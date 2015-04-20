@@ -21,6 +21,7 @@
 }
 .list-caract ul {
 	list-style: none;
+	padding-left: 2.5rem;
 }
 .list-caract ul li p{
 	padding-left: 1.3rem;
@@ -28,12 +29,6 @@
 .info-mod-cost {
 	position: relative;
 	font-size: 3rem;
-}
-.info-mod-cost span {
-	font-size: 1.5rem;
-	position: absolute;
-	left: 6.5rem;
-	top: .4rem;
 }
 .desc-infocv {
 	margin-top: 3rem;
@@ -46,4 +41,31 @@
 }
 .more-modules {
 	margin-left: 2.7rem;
+}
+/*
+
+	MEDIAS QUERYS - INFO CV MODULE
+
+*/
+@media screen and (max-width: 1199px) {
+	.img-infocv {
+	  width: 390px;
+	}
+	.info-mod-cost span {
+		left: 9.8rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	.info-cv-border {
+		border-right: none;
+	}
+	.img-infocv {
+	  width: 90%;
+	  height: auto;
+	}
+}
+@media screen and (max-width: 600px) {
+	.list-caract ul {
+		padding-left: 1.5rem;
+	}
 }
