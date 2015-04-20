@@ -8813,18 +8813,26 @@ button.close {
   border-radius: 50%;
   width: 100px;
   float: left;
-  margin: 1.5rem 1rem;
+  margin: 1.8rem 1rem;
   position: relative;
 }
 .module-descr {
   float: left;
-  max-width: 75%;
+  max-width: 70%;
 }
 .module-prices {
   display: inline-block;
   position: relative;
   line-height: 9rem;
   font-size: 3rem;
+  color: #626262;
+  margin-left: 3rem;
+}
+.cost {
+  font-size: 1.4rem;
+  position: absolute;
+  top: -0.6rem;
+  left: -0.8rem;
 }
 html {
   font-size: 16px !important;
