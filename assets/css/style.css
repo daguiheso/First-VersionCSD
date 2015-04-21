@@ -9088,7 +9088,7 @@ button.close {
   margin: 1rem 1rem 0;
 }
 .susc-extraplans {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #777777;
   padding: 0 .2rem 1rem;
   text-align: center;
   margin: 0 1rem;
@@ -9143,6 +9143,31 @@ button.close {
 .btn-buy-susc-small:hover {
   background: #198b72;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .susc-plans-starter,
+  .susc-plans-medium,
+  .susc-plans-advanced,
+  .susc-plans-enterprise {
+    height: 955px;
+  }
+  .susc-starter-body p:nth-child(1),
+  .susc-medium-body p:nth-child(1),
+  .susc-advanced-body p:nth-child(1) {
+    font-size: 3rem;
+  }
+  .susc-enterprise-body {
+    padding: 1.7rem .5rem;
+  }
+  .susc-enterprise-body p:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .susc-extraplans {
+    margin: 0 0rem;
+  }
+  .mg-respon {
+    margin: 0 0.1rem;
+  }
 }
 html {
   font-size: 16px !important;
