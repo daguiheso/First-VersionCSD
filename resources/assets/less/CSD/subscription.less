@@ -1,6 +1,6 @@
 /*
 
-	PLANS
+	PLANS- SUBSCRIPTION
 
 */
 .panel-subscription {
@@ -199,7 +199,11 @@
 	  background: @butongreen-hover-csd;
 	  color: @white-csd;
 }
+/*
 
+	MEDIA QUERYS - SUBSCRIPTION
+
+*/
 @media screen and (max-width: 1199px) {
 	.susc-plans-starter, 
 	.susc-plans-medium, 
@@ -223,5 +227,39 @@
 	}
 	.mg-respon {
 			margin: 0 0.1rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	.susc-plans-starter, 
+	.susc-plans-medium, 
+	.susc-plans-advanced, 
+	.susc-plans-enterprise {
+			height: 800px;
+	}
+	.susc-starter-body p:nth-child(1), 
+	.susc-medium-body p:nth-child(1),
+	.susc-advanced-body p:nth-child(1) {
+	  	font-size: 3.75rem;
+	}
+	.susc-starter-body, 
+	.susc-medium-body, 
+	.susc-advanced-body {
+			padding: 2.5rem 2.5rem;
+	}
+	.susc-enterprise-body {
+	  	padding: 2.7rem 1.6rem;
+	}
+	.susc-enterprise-body p:nth-child(1) {
+	  	font-size: 1.8rem;
+	}
+	.susc-extraplans {
+	  	margin: 0 1rem;
+	  	font-size: 1rem;
+	}
+	.susc-medium {
+		  margin-bottom: 1.5rem;
+	}
+	.susc-subt {
+			font-size: .9rem !important;
 	}
 }
