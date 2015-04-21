@@ -8950,12 +8950,16 @@ button.close {
 	PLANS
 
 */
+.panel-subscription {
+  padding-bottom: 6rem;
+}
 .sus-pd {
   padding: 0 0.5rem;
 }
 .susc-plans {
   font-size: 0;
   padding-bottom: 3.12rem;
+  margin-top: 4.5rem;
 }
 .susc-plans-title {
   font-family: 'Fjalla One', sans-serif;
@@ -8978,7 +8982,7 @@ button.close {
   background: #f4f4f4;
   border-radius: 10px;
   padding: 0 0 3rem 0;
-  height: 700px;
+  height: 800px;
 }
 .susc-starter-head,
 .susc-medium-head,
