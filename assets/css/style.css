@@ -9069,6 +9069,7 @@ button.close {
   background: #198B72;
   color: #FFFFFF;
 }
+/* FOOTER */
 .susc-enterprise-footer p {
   font-size: 0.75rem;
   color: #777777;
@@ -9082,7 +9083,33 @@ button.close {
   position: relative;
   margin: 1rem 1rem 0;
 }
-/* BOTTON COMPRAR */
+.susc-extraplans {
+  border-bottom: 1px dotted;
+  padding: 0 .2rem 1rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+.fade-border {
+  border: 0;
+}
+.susc-extraplans p {
+  color: #17c7a0;
+  border-bottom: 0;
+  font-weight: bold;
+  padding-bottom: .3rem;
+}
+.susc-icon-dolar {
+  font-size: 1.1rem;
+  position: relative;
+  top: -1rem;
+}
+.susc-price-advanced {
+  font-size: 2.1rem;
+}
+.susc-label-mes {
+  font-size: .9rem;
+}
+/* BOTTON BUY - HEADER */
 .btn-buy-susc {
   background: #ffffff;
   width: 100%;
@@ -9095,6 +9122,22 @@ button.close {
 }
 .btn-buy-susc:hover {
   background: #17c7a0;
+  color: #ffffff;
+}
+/* BOTTON BUY - FOOTER */
+.btn-buy-susc-small {
+  background: #1ea486;
+  padding: .49rem .8rem;
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-style: none;
+  vertical-align: text-bottom;
+  margin-left: .5rem;
+}
+.btn-buy-susc-small:hover {
+  background: #198b72;
   color: #ffffff;
 }
 html {
@@ -9127,6 +9170,9 @@ body {
 }
 .mb0 {
   margin-bottom: 0;
+}
+.pt0 {
+  padding-top: 0 !important;
 }
 .csd-color {
   color: #17c7a0;
