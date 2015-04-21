@@ -234,7 +234,7 @@
 	.susc-plans-medium, 
 	.susc-plans-advanced, 
 	.susc-plans-enterprise {
-			height: 800px;
+			height: 820px;
 	}
 	.susc-starter-body p:nth-child(1), 
 	.susc-medium-body p:nth-child(1),
@@ -270,5 +270,37 @@
 	.susc-small {
 			max-width: 400px;
 			margin: 3rem auto;
+	}
+}
+@media screen and (max-width: 402px) {
+	.mobile-icon-susc {
+	  	margin: 1rem 1rem 0;
+	}
+}
+@media screen and (max-width: 372px) {
+	.susc-plans-starter, 
+	.susc-plans-medium, 
+	.susc-plans-advanced, 
+	.susc-plans-enterprise {
+			height: auto;
+	}
+}
+@media screen and (max-width: 334px) {
+	.susc-starter-body p:nth-child(1), 
+	.susc-medium-body p:nth-child(1),
+	.susc-advanced-body p:nth-child(1) {
+	  	font-size: 3rem;
+	}
+	.susc-enterprise-body {
+	  	padding: 1.7rem .5rem;
+	}
+	.susc-enterprise-body p:nth-child(1) {
+	  	font-size: 1.6rem;
+	}
+	.susc-extraplans {
+	  	margin: 0 0rem;
+	}
+	.mg-respon {
+			margin: 0 0.2rem;
 	}
 }
