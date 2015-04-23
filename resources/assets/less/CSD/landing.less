@@ -4,38 +4,43 @@
 
 */
 .header-landing {
-	font-size: 6em;
+	font-size: 1em;
     height: 162px;
+    position: relative;
 }
 .csd {
 	font-weight: bold;
 }
-.csd-icon {
-	position: relative;
-    color: #17c7a0;
-    float: left;
-    left: 1em;
-    top: 0.15em;
-}
-.rds-icon {
-	color: rgb(173,173,173);
-    float: left;
-    font-size: .5em;
-    position: relative;
-    right: 2.4em;
-    top: 1.16em;
-    z-index: 5;
-}
 .loglog {
-	height: 132px;
-	left: 6.5rem; 
+	left: 3rem;
+	padding: .5rem;
 	position: relative;
-	width: 173px;
+	width: 207px;
 }
 .mobiles-img img {
 	height: auto;
 	max-width: 100%;
 	padding: 0;
+}
+.header-nav-landing {
+    position: absolute;
+    right: 0;
+    top: 37%;
+    padding-right: 4rem;
+}
+.header-nav-landing ul {
+    list-style: none;
+}
+.header-nav-landing ul li {
+	display: inline-block;
+}
+.header-nav-landing ul li a {
+	text-decoration: none;
+    padding: 0.5rem;
+}
+.btn-nav-landind {
+    display: inline-block;
+    margin-top: 0 !important;
 }
 /*
 
@@ -794,15 +799,16 @@ background: #198B72;
 	}
 	.right-text {
 	 	text-align: center !important;
-	}
-	.rds-icon {
-	    right: 1.4em;
-	}
-	.loglog {
-	    left: 5.5rem;
-	}
+	}	
 } 
 @media screen and (max-width: 875px) {
+	.header-landing {
+		height: auto;
+	}
+	.loglog {
+		height: auto;
+		width: 20%;
+	}
 	.img-ipad {
 	    width: 256px;
 	}
@@ -836,6 +842,11 @@ background: #198B72;
 	    bottom: 6rem;
 	}
 }
+@media screen and (max-width: 800px) {
+	.header-nav-landing {
+	  display: none;
+	}
+}
 /*
 
 	MEDIAS TABLETS
@@ -847,16 +858,7 @@ background: #198B72;
 	}
 	.plans {
 		margin: 0 10rem;
-	}
-	.header-landing {
-	    font-size: 5em;
-	}
-	.loglog {
-	    top: .8rem;
-	}
-	.rds-icon {
-	    top: 1.6em;
-	}
+	}			
 	.checkmark-text {
 	    left: 6rem;
 	}
@@ -867,23 +869,12 @@ background: #198B72;
 	    height: 630spx;
 	}
 }
-@media screen and (max-width: 736px) {
-	.rds-icon {
-	    right: 5.5rem;
-	}
-}
 @media screen and (max-width: 673px) {
 	.btn-probar {
   		margin-top: 1rem;
 	}
 }
-@media screen and (max-width: 667px) {
-	.loglog {
-	    left: 3.5rem;
-	}
-	.rds-icon {
-	    right: 4.5rem;
-	}
+@media screen and (max-width: 667px) {		
 	.info {
 	    margin: 0 3rem;
 	}
@@ -907,13 +898,7 @@ background: #198B72;
 	    left: 2rem;
 	}
 }
-@media screen and (max-width: 600px) {
-	.loglog {
-	    left: 2rem;
-	}
-	.rds-icon {
-	    right: 1em;
-	}
+@media screen and (max-width: 600px) {	
 	.plans {
 	    margin: 0 7rem;
 	}
@@ -934,13 +919,7 @@ background: #198B72;
 		height: 667px;
 	}	
 }
-@media screen and (max-width: 568px) {
-	.loglog {
-	    left: 1rem;
-	}
-	.rds-icon {
-	    right: .7em;
-	}
+@media screen and (max-width: 568px) {	
 	.info {
 	    margin: 0 2rem;
 	}
@@ -975,20 +954,13 @@ background: #198B72;
 	    height: 740px;
 	}
 }
-@media screen and (max-width: 480px) {
-	.header-landing {
-		  font-size: 4em;
-	}
-	.loglog {
+@media screen and (max-width: 480px) {	
+	/*.loglog {
 		top: 1.8rem;
 		width: 120px;
 		height: 105px;
 		left: 0.5rem;
-	}
-	.rds-icon {
-	    top: 2.1em;
-	    right: 0.4em;
-	}
+	}*/	
 	.info {
 		margin: 0 1rem;
 	}
@@ -1028,11 +1000,7 @@ background: #198B72;
 @media screen and (max-width: 384px) {
 	.header-landing {
 	    font-size: 3.6em;
-	}
-	.rds-icon {
-	    top: 2.4em;
-	    right: 0.4em;
-	}
+	}	
 	.info {
 	    margin: 0 .3rem;
 	}
@@ -1068,17 +1036,7 @@ background: #198B72;
 	.header-landing {
  		height: 130px;
  		font-size: 2.6em;
-	}
-	.loglog {
-	    top: 1rem;
-	    width: 114px;
-	    height: 95px;
-	    left: 0.5rem;
-	}
-	.rds-icon {
-	    top: 2.6em;
-	    right: 0.4em;
-	}
+	}	
 	.info {
 		  margin: 0;
 	}
