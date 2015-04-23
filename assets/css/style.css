@@ -8704,7 +8704,7 @@ button.close {
   padding-left: 2rem;
   margin: .9rem 0;
   padding: 0 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .btn-confdom {
   margin-left: .45rem;
@@ -8712,6 +8712,9 @@ button.close {
 }
 .mod-title {
   margin-top: 16px;
+}
+.period-test-title {
+  font-size: 1.38rem;
 }
 /*
 
@@ -8726,7 +8729,7 @@ button.close {
   padding-left: 2rem;
   margin: .9rem 0;
   padding: 0 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .delete-susc p {
   width: 50%;
@@ -8815,7 +8818,7 @@ button.close {
   padding-left: 2rem;
   margin: .9rem 0;
   padding: 0 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .module-icon {
   background: #17c7a0;
@@ -8892,7 +8895,7 @@ button.close {
   padding-left: 2rem;
   margin: .9rem 0;
   padding: 0 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .info-cv-border {
   border-right: 1px solid #dddddd;
@@ -9384,7 +9387,7 @@ body {
 
 */
 .alert-csd {
-  border: 0.14em solid #ff905a;
+  border: 3px solid #ff905a;
   color: #ffb885;
   padding: 1.3em 4em;
   background: white;
