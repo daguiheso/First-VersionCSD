@@ -9135,7 +9135,7 @@ button.close {
 }
 /* BOTTON BUY - FOOTER */
 .btn-buy-susc-small {
-  background: #1ea486;
+  background: #17c7a0;
   padding: .49rem .8rem;
   font-size: 0.88rem;
   color: #ffffff;
@@ -9407,7 +9407,7 @@ body {
 
 */
 .btn-csd {
-  background: #1ea486;
+  background: #17c7a0;
   padding: .8rem 1.6rem;
   font-size: 0.88rem;
   color: #ffffff;
@@ -9421,7 +9421,7 @@ body {
   color: #ffffff;
 }
 .btn-csd-small {
-  background: #1ea486;
+  background: #17c7a0;
   padding: .5rem 1.6rem;
   font-size: 0.88rem;
   color: #ffffff;
@@ -9432,6 +9432,9 @@ body {
 .btn-csd-small:hover {
   background: #198b72;
   color: #ffffff;
+}
+.btn-danger {
+  background: #d9534f;
 }
 /*
 
