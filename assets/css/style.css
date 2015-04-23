@@ -8691,6 +8691,11 @@ button.close {
     display: block;
   }
 }
+/* 
+
+	PANEL - HOME
+		 
+*/
 .panel-heading-cuenta {
   color: #17c7a0 !important;
 }
@@ -8889,8 +8894,21 @@ button.close {
   padding: 0 1.3rem;
   font-weight: 600;
 }
+.info-cv-border {
+  border-right: 1px solid #dddddd;
+}
 .img-infocv {
   width: 600px;
+}
+.desc-infocv {
+  margin-top: 3rem;
+}
+.column2 {
+  padding-left: 0;
+}
+.info-mod-cost {
+  position: relative;
+  font-size: 3rem;
 }
 .list-caract {
   margin-top: 2rem;
@@ -8901,19 +8919,6 @@ button.close {
 }
 .list-caract ul li p {
   padding-left: 1.3rem;
-}
-.info-mod-cost {
-  position: relative;
-  font-size: 3rem;
-}
-.desc-infocv {
-  margin-top: 3rem;
-}
-.info-cv-border {
-  border-right: 1px solid #dddddd;
-}
-.column2 {
-  padding-left: 0;
 }
 .more-modules {
   margin-left: 2.7rem;
