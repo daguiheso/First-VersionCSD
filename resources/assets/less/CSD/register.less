@@ -52,10 +52,6 @@
 .register {
 	background: url('../images/csdbg.jpg');
 	opacity: .8;
-	position: absolute;
-	left: 0;
-	right: 0;
-	min-height: 92%;
 }
 .form-register {
 	padding: 3.12rem;
@@ -103,23 +99,38 @@
 .footer-register {
 	text-align: center;
 	margin-top: 4.5rem;
+	background: #e6e6e6;
+	line-height: 3.56rem;
+	height: 3.56rem;
+	opacity: .5;
 }
-.footer-register p {
+.footer-register ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.footer-register ul li {
+	display: inline-block;
+	position: absolute;
+}
+.footer-register ul > li:nth-child(1) {
+	left: 4rem;
+}
+.footer-register ul > li:nth-child(2) {
+	right: 22.4rem;
+}
+.footer-register ul > li:nth-child(3) {
+	right: 13rem;
+}
+.footer-register ul > li:nth-child(4) {
+	right: 4rem;
+}
+.footer-register ul li a {
+	display: inline-block;
 	color: black;
 	font-size: .8rem;
-	display: inline-block;
-    margin-right: 14rem;
-    font-weight: bold;
-}
-.footer-register a {
-	color: black;
-	font-size: .8rem;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: bold;
-}
-.footer-register a:nth-child(3){
-	margin-left: 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 .mgbtn0 {
 	margin-bottom: 0
@@ -129,15 +140,17 @@
 	MEDIAS QUERYS - REGISTER
 
 */
-@media screen and (max-width: 900px) {
-	.footer-register p {
-	    margin-right: 2rem;
+@media screen and (max-width: 991px) {
+	.footer-register {
+		height: auto;
 	}
-}
-@media screen and (max-width: 630px) {
-	.footer-register p {
-	    display: block; 
-	    margin: 0;
+	.footer-register ul li {
+		display: inline-block;
+		position: static;
+		height: 2rem;
+	}
+	.footer-register ul > li:nth-child(1) {
+		display: block;
 	}
 }
 @media screen and (max-width: 449px) {
@@ -147,5 +160,10 @@
 	.content-form {
 		width: 100%;
 		padding-top: 2rem;
+	}
+}
+@media screen and (max-width: 430px) {
+	.footer-register ul li a {
+		font-size: .6rem;
 	}
 }

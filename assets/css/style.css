@@ -8386,10 +8386,6 @@ button.close {
 .register {
   background: url('../images/csdbg.jpg');
   opacity: .8;
-  position: absolute;
-  left: 0;
-  right: 0;
-  min-height: 92%;
 }
 .form-register {
   padding: 3.12rem;
@@ -8437,23 +8433,38 @@ button.close {
 .footer-register {
   text-align: center;
   margin-top: 4.5rem;
+  background: #e6e6e6;
+  line-height: 3.56rem;
+  height: 3.56rem;
+  opacity: .5;
 }
-.footer-register p {
+.footer-register ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-register ul li {
+  display: inline-block;
+  position: absolute;
+}
+.footer-register ul > li:nth-child(1) {
+  left: 4rem;
+}
+.footer-register ul > li:nth-child(2) {
+  right: 22.4rem;
+}
+.footer-register ul > li:nth-child(3) {
+  right: 13rem;
+}
+.footer-register ul > li:nth-child(4) {
+  right: 4rem;
+}
+.footer-register ul li a {
+  display: inline-block;
   color: black;
   font-size: .8rem;
-  display: inline-block;
-  margin-right: 14rem;
   font-weight: bold;
-}
-.footer-register a {
-  color: black;
-  font-size: .8rem;
-  display: inline-block;
   text-decoration: none;
-  font-weight: bold;
-}
-.footer-register a:nth-child(3) {
-  margin-left: 2rem;
 }
 .mgbtn0 {
   margin-bottom: 0;
@@ -8463,15 +8474,17 @@ button.close {
 	MEDIAS QUERYS - REGISTER
 
 */
-@media screen and (max-width: 900px) {
-  .footer-register p {
-    margin-right: 2rem;
+@media screen and (max-width: 991px) {
+  .footer-register {
+    height: auto;
   }
-}
-@media screen and (max-width: 630px) {
-  .footer-register p {
+  .footer-register ul li {
+    display: inline-block;
+    position: static;
+    height: 2rem;
+  }
+  .footer-register ul > li:nth-child(1) {
     display: block;
-    margin: 0;
   }
 }
 @media screen and (max-width: 449px) {
@@ -8481,6 +8494,11 @@ button.close {
   .content-form {
     width: 100%;
     padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer-register ul li a {
+    font-size: .6rem;
   }
 }
 /*
@@ -8537,10 +8555,6 @@ button.close {
 .login {
   background: url('../images/csdbg.jpg');
   opacity: .8;
-  position: absolute;
-  left: 0;
-  right: 0;
-  min-height: 92%;
 }
 .content-form {
   width: 450px;
@@ -8572,7 +8586,7 @@ button.close {
   color: #FFF;
   text-decoration: none;
   font-size: .8rem;
-  margin-left: 7rem;
+  margin-left: 3rem;
 }
 .btn-login {
   background: #17C7A0;
@@ -8597,23 +8611,38 @@ button.close {
 .footer-login {
   text-align: center;
   margin-top: 4.5rem;
+  background: #e6e6e6;
+  line-height: 3.56rem;
+  height: 3.56rem;
+  opacity: .5;
 }
-.footer-login p {
+.footer-login ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-login ul li {
+  display: inline-block;
+  position: absolute;
+}
+.footer-login ul > li:nth-child(1) {
+  left: 4rem;
+}
+.footer-login ul > li:nth-child(2) {
+  right: 22.4rem;
+}
+.footer-login ul > li:nth-child(3) {
+  right: 13rem;
+}
+.footer-login ul > li:nth-child(4) {
+  right: 4rem;
+}
+.footer-login ul li a {
+  display: inline-block;
   color: black;
   font-size: .8rem;
-  display: inline-block;
-  margin-right: 14rem;
   font-weight: bold;
-}
-.footer-login a {
-  color: black;
-  font-size: .8rem;
-  display: inline-block;
   text-decoration: none;
-  font-weight: bold;
-}
-.footer-login a:nth-child(3) {
-  margin-left: 2rem;
 }
 .mgbtn0 {
   margin-bottom: 0;
@@ -8623,19 +8652,21 @@ button.close {
 	MEDIAS QUERYS - LOGIN
 
 */
-@media screen and (max-width: 900px) {
-  .footer-login p {
-    margin-right: 2rem;
+@media screen and (max-width: 991px) {
+  .footer-login {
+    height: auto;
   }
-}
-@media screen and (max-width: 630px) {
-  .footer-login p {
+  .footer-login ul li {
+    display: inline-block;
+    position: static;
+    height: 2rem;
+  }
+  .footer-login ul > li:nth-child(1) {
     display: block;
-    margin: 0;
   }
 }
 @media screen and (max-width: 449px) {
-  .header-register {
+  .header-login {
     padding: 0 1.5em;
   }
   .content-form {
@@ -8647,6 +8678,11 @@ button.close {
   }
   .checkbox {
     display: block;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer-login ul li a {
+    font-size: .6rem;
   }
 }
 /* 
@@ -8675,52 +8711,11 @@ button.close {
 .period-test-title {
   font-size: 1.38rem;
 }
-/* 
-
-	FOOTER - HOME
-		 
-*/
-.footer-home {
-  font-size: .8rem;
-  position: relative;
-  bottom: -3.6rem;
-  background: #e6e6e6;
-  height: 3.56rem;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  line-height: 3.56rem;
-}
-.footer-home p {
-  margin-bottom: 0;
-  position: absolute;
-}
-.footer-home p:nth-child(1) {
-  left: 5rem;
-}
-.footer-home p:nth-child(2) {
-  right: 5rem;
-  display: inline-block;
-}
 /*
 
 	MEDIAS QUERYS - HOME
 
 */
-@media screen and (max-width: 875px) {
-  .footer-home {
-    height: auto;
-  }
-  .footer-home p {
-    position: static;
-    height: 2rem;
-  }
-}
-@media screen and (max-width: 722px) {
-  .footer-home {
-    bottom: 0;
-  }
-}
 @media screen and (max-width: 677px) {
   .btn-confdom {
     margin-left: 0;
@@ -8729,9 +8724,6 @@ button.close {
 @media screen and (max-width: 375px) {
   .btn-confdom {
     font-size: .75rem !important;
-  }
-  .footer-home p {
-    font-size: .6rem;
   }
 }
 @media screen and (max-width: 345px) {
@@ -9409,28 +9401,41 @@ body {
 
 */
 .footer-global {
-  font-size: .8rem;
-  position: absolute;
-  bottom: 0rem;
-  left: 0;
-  right: 0;
-  background: #e6e6e6;
-  height: 3.56rem;
-  padding: 0;
-  margin: 0;
   text-align: center;
+  margin-top: 4.5rem;
   line-height: 3.56rem;
+  height: 3.56rem;
 }
-.footer-global p {
+.footer-global ul {
+  list-style: none;
   margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-global ul li {
+  display: inline-block;
   position: absolute;
 }
-.footer-global p:nth-child(1) {
-  left: 5rem;
+.footer-global ul > li:nth-child(1) {
+  left: 4rem;
 }
-.footer-global p:nth-child(2) {
-  right: 5rem;
+.footer-global ul > li:nth-child(2) {
+  right: 22.4rem;
+}
+.footer-global ul > li:nth-child(3) {
+  right: 13rem;
+}
+.footer-global ul > li:nth-child(4) {
+  right: 4rem;
+}
+.footer-global ul li a {
   display: inline-block;
+  color: #626262;
+  font-size: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.mgbtn0 {
+  margin-bottom: 0;
 }
 /*
 
@@ -9500,13 +9505,17 @@ body {
     line-height: 7rem;
   }
 }
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 991px) {
   .footer-global {
     height: auto;
   }
-  .footer-global p {
+  .footer-global ul li {
+    display: inline-block;
     position: static;
     height: 2rem;
+  }
+  .footer-global ul > li:nth-child(1) {
+    display: block;
   }
 }
 @media screen and (max-width: 732px) {
@@ -9520,11 +9529,6 @@ body {
     padding-left: 0rem;
   }
 }
-@media screen and (max-width: 722px) {
-  .footer-global {
-    bottom: 0;
-  }
-}
 @media screen and (max-width: 630px) {
   .header-global nav ul {
     display: none;
@@ -9536,8 +9540,8 @@ body {
     padding: 0 5em;
   }
 }
-@media screen and (max-width: 375px) {
-  .footer-global p {
+@media screen and (max-width: 430px) {
+  .footer-global ul li a {
     font-size: .6rem;
   }
 }

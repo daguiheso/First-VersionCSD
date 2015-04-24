@@ -52,10 +52,6 @@
 .login {
 	background: url('../images/csdbg.jpg');
 	opacity: .8;
-	position: absolute;
-	left: 0;
-	right: 0;
-	min-height: 92%;
 }
 .content-form {
 	width: 450px;
@@ -87,7 +83,7 @@
 	color: #FFF;
 	text-decoration: none;
 	font-size: .8rem;
-	margin-left: 7rem;
+	margin-left: 3rem;
 }
 .btn-login {
 	background: #17C7A0;
@@ -112,23 +108,38 @@
 .footer-login {
 	text-align: center;
 	margin-top: 4.5rem;
+	background: #e6e6e6;
+	line-height: 3.56rem;
+	height: 3.56rem;
+	opacity: .5;
 }
-.footer-login p {
+.footer-login ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.footer-login ul li {
+	display: inline-block;
+	position: absolute;
+}
+.footer-login ul > li:nth-child(1) {
+	left: 4rem;
+}
+.footer-login ul > li:nth-child(2) {
+	right: 22.4rem;
+}
+.footer-login ul > li:nth-child(3) {
+	right: 13rem;
+}
+.footer-login ul > li:nth-child(4) {
+	right: 4rem;
+}
+.footer-login ul li a {
+	display: inline-block;
 	color: black;
 	font-size: .8rem;
-	display: inline-block;
-    margin-right: 14rem;
-    font-weight: bold;
-}
-.footer-login a {
-	color: black;
-	font-size: .8rem;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: bold;
-}
-.footer-login a:nth-child(3){
-	margin-left: 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 .mgbtn0 {
 	margin-bottom: 0
@@ -138,19 +149,21 @@
 	MEDIAS QUERYS - LOGIN
 
 */
-@media screen and (max-width: 900px) {
-	.footer-login p {
-	    margin-right: 2rem;
+@media screen and (max-width: 991px) {
+	.footer-login {
+		height: auto;
 	}
-}
-@media screen and (max-width: 630px) {
-	.footer-login p {
-	    display: block; 
-	    margin: 0;
+	.footer-login ul li {
+		display: inline-block;
+		position: static;
+		height: 2rem;
+	}
+	.footer-login ul > li:nth-child(1) {
+		display: block;
 	}
 }
 @media screen and (max-width: 449px) {
-	.header-register {
+	.header-login {
 	    padding: 0 1.5em;
 	}
 	.content-form {
@@ -162,5 +175,10 @@
 	}
 	.checkbox {
 		display: block;
+	}
+}
+@media screen and (max-width: 430px) {
+	.footer-login ul li a {
+		font-size: .6rem;
 	}
 }
