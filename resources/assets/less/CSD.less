@@ -42,6 +42,9 @@ body {
 .martop {
 	margin-top: 1.5rem;
 }
+.marbot {
+	margin-bottom: 1.5rem;
+}
 .mt0 {
 	margin-top: 0;
 }
@@ -138,8 +141,10 @@ body {
 */
 .footer-global {
 	font-size: .8rem;
-	position: relative;	
-	bottom: -1.5rem;
+	position: absolute;	
+	bottom: 0rem;
+	left: 0;
+	right: 0;
 	background: #e6e6e6;
 	height: 3.56rem;
 	padding: 0;
@@ -155,10 +160,6 @@ body {
 	left: 5rem;
 }
 .footer-global p:nth-child(2) {
-	right: 15rem;
-	display: inline-block;
-}
-.footer-global p:nth-child(3) {
 	right: 5rem;
 	display: inline-block;
 }
@@ -230,20 +231,13 @@ body {
 		line-height: 7rem;
 	}
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 875px) {
 	.footer-global {
 	    height: auto;
 	}
 	.footer-global p {
 	    position: static;
-	}
-	.footer-global p:nth-child(3) {
-		margin-left: 4rem;
-	}
-}
-@media screen and (max-width: 748px) {
-	.header-global {
-	    padding: 0 1.25em;
+	    height: 2rem;
 	}
 }
 @media screen and (max-width: 732px) {
@@ -257,6 +251,11 @@ body {
 		padding-left: 0rem;
 	}
 }
+@media screen and (max-width: 722px) {
+	.footer-global {
+	  bottom: 0; 
+	}
+}
 @media screen and (max-width: 630px) {
 	.header-global nav ul {
 		display: none;
@@ -267,14 +266,9 @@ body {
 	.header-global {
 	    padding: 0 5em;
 	}
-	.footer-global p {
-	    display: block; 
-	    margin: 0;
-	}
 }
-@media screen and (max-width: 430px) {
-	.footer-global p:nth-child(3) {
-		margin-left: 0rem;
-		display: block;
+@media screen and (max-width: 375px) {
+	.footer-global p {
+		font-size: .6rem;
 	}
 }

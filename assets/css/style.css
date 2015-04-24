@@ -8666,6 +8666,7 @@ button.close {
 }
 .btn-confdom {
   margin-left: .45rem;
+  padding: 0.8rem !important;
   width: auto;
 }
 .mod-title {
@@ -8673,6 +8674,70 @@ button.close {
 }
 .period-test-title {
   font-size: 1.38rem;
+}
+/* 
+
+	FOOTER - HOME
+		 
+*/
+.footer-home {
+  font-size: .8rem;
+  position: relative;
+  bottom: -3.6rem;
+  background: #e6e6e6;
+  height: 3.56rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 3.56rem;
+}
+.footer-home p {
+  margin-bottom: 0;
+  position: absolute;
+}
+.footer-home p:nth-child(1) {
+  left: 5rem;
+}
+.footer-home p:nth-child(2) {
+  right: 5rem;
+  display: inline-block;
+}
+/*
+
+	MEDIAS QUERYS - HOME
+
+*/
+@media screen and (max-width: 875px) {
+  .footer-home {
+    height: auto;
+  }
+  .footer-home p {
+    position: static;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 722px) {
+  .footer-home {
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 677px) {
+  .btn-confdom {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .btn-confdom {
+    font-size: .75rem !important;
+  }
+  .footer-home p {
+    font-size: .6rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .btn-confdom {
+    font-size: .65rem !important;
+  }
 }
 /*
 
@@ -9246,6 +9311,9 @@ body {
 .martop {
   margin-top: 1.5rem;
 }
+.marbot {
+  margin-bottom: 1.5rem;
+}
 .mt0 {
   margin-top: 0;
 }
@@ -9342,8 +9410,10 @@ body {
 */
 .footer-global {
   font-size: .8rem;
-  position: relative;
-  bottom: -1.5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  right: 0;
   background: #e6e6e6;
   height: 3.56rem;
   padding: 0;
@@ -9359,10 +9429,6 @@ body {
   left: 5rem;
 }
 .footer-global p:nth-child(2) {
-  right: 15rem;
-  display: inline-block;
-}
-.footer-global p:nth-child(3) {
   right: 5rem;
   display: inline-block;
 }
@@ -9434,20 +9500,13 @@ body {
     line-height: 7rem;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 875px) {
   .footer-global {
     height: auto;
   }
   .footer-global p {
     position: static;
-  }
-  .footer-global p:nth-child(3) {
-    margin-left: 4rem;
-  }
-}
-@media screen and (max-width: 748px) {
-  .header-global {
-    padding: 0 1.25em;
+    height: 2rem;
   }
 }
 @media screen and (max-width: 732px) {
@@ -9461,6 +9520,11 @@ body {
     padding-left: 0rem;
   }
 }
+@media screen and (max-width: 722px) {
+  .footer-global {
+    bottom: 0;
+  }
+}
 @media screen and (max-width: 630px) {
   .header-global nav ul {
     display: none;
@@ -9471,15 +9535,10 @@ body {
   .header-global {
     padding: 0 5em;
   }
-  .footer-global p {
-    display: block;
-    margin: 0;
-  }
 }
-@media screen and (max-width: 430px) {
-  .footer-global p:nth-child(3) {
-    margin-left: 0rem;
-    display: block;
+@media screen and (max-width: 375px) {
+  .footer-global p {
+    font-size: .6rem;
   }
 }
 

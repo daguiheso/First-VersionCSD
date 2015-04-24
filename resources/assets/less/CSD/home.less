@@ -15,6 +15,7 @@
 }
 .btn-confdom {
 	margin-left: .45rem;
+	padding: 0.8rem !important;
 	width: auto;
 }
 .mod-title {
@@ -22,4 +23,68 @@
 }
 .period-test-title {
 	font-size: 1.38rem;
+}
+/* 
+
+	FOOTER - HOME
+		 
+*/ 
+.footer-home {
+	font-size: .8rem;
+	position: relative;	
+	bottom: -3.6rem;
+	background: #e6e6e6;
+	height: 3.56rem;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 3.56rem;
+}
+.footer-home p {
+	margin-bottom: 0;
+	position: absolute;
+}
+.footer-home p:nth-child(1) {
+	left: 5rem;
+}
+.footer-home p:nth-child(2) {
+	right: 5rem;
+	display: inline-block;
+}
+/*
+
+	MEDIAS QUERYS - HOME
+
+*/
+@media screen and (max-width: 875px) {
+	.footer-home {
+	    height: auto;
+	}
+	.footer-home p {
+	    position: static;
+	    height: 2rem;
+	}
+}
+@media screen and (max-width: 722px) {
+	.footer-home {
+	  bottom: 0; 
+	}
+}
+@media screen and (max-width: 677px) {
+	.btn-confdom {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 375px) {
+	.btn-confdom {
+		font-size: .75rem !important;
+	}
+	.footer-home p {
+		font-size: .6rem;
+	}
+}
+@media screen and (max-width: 345px) {
+	.btn-confdom {
+		font-size: .65rem !important;
+	}
 }
