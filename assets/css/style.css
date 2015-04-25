@@ -7480,12 +7480,6 @@ button.close {
   width: 335px;
   height: 284px;
 }
-.mobile-icon {
-  font-size: 2.2rem;
-  position: absolute;
-  top: 4.65rem;
-  left: 1.2rem;
-}
 /*
 
 	INFO-ACTIONS
@@ -7702,7 +7696,7 @@ button.close {
 }
 /* ENTERPRISE */
 .enterprise-body {
-  padding: 2.5rem 2.5rem 4.6rem;
+  padding: 1.7rem 1.5rem;
   background: #17C7A0;
   text-align: center;
   color: #FFF;
@@ -7726,14 +7720,14 @@ button.close {
 }
 .btn-contact {
   background: #1EA486;
-  padding: .6rem 2.2rem;
+  padding: .6rem 0rem;
   font-size: 0.88rem;
+  width: 85%;
   color: #FFFFFF;
   font-weight: bold;
-  position: absolute;
-  right: 3.1rem;
   text-decoration: none;
   border-style: none;
+  margin-top: .5rem;
 }
 .btn-contact:hover {
   background: #198B72;
@@ -7746,6 +7740,12 @@ button.close {
   text-align: center;
   padding: 1rem 0;
   margin: 0 1rem;
+}
+.mobile-icon {
+  font-size: 2.2rem;
+  position: relative;
+  margin: 1rem 1rem 0;
+  float: left;
 }
 /* BOTTOM PRUEBA */
 .prueba {
@@ -7939,9 +7939,6 @@ button.close {
   .feature-bodythree {
     letter-spacing: 0.06rem;
   }
-  .btn-contact {
-    right: 1.3rem;
-  }
   .starter-body,
   .medium-body,
   .advanced-body {
@@ -7953,8 +7950,11 @@ button.close {
   .plans-enterprise {
     height: 772px;
   }
-  .mobile-icon {
-    top: 5.2rem;
+  .enterprise-body {
+    padding: 2.5rem 1rem;
+  }
+  .btn-contact {
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 1124px) {
@@ -8061,9 +8061,6 @@ button.close {
     position: relative;
     top: 0.3rem;
   }
-  .md {
-    padding: 3.9rem 2.5rem 4.6rem;
-  }
   .plans-starter,
   .plans-medium,
   .plans-advanced,
@@ -8077,14 +8074,8 @@ button.close {
   .enterprise-footer {
     position: relative;
   }
-  .btn-contact {
-    right: 5.3rem;
-  }
   .mobile-icon {
-    top: 3.55rem;
-  }
-  .right-text {
-    text-align: center !important;
+    margin: 0.4rem 1rem 0;
   }
   .footer-landing {
     height: auto;
@@ -8165,6 +8156,14 @@ button.close {
   .plans-starter {
     height: 630spx;
   }
+  .info-imgcsd img {
+    width: 60%;
+    height: auto;
+  }
+  .info-actionsimgpc img {
+    width: 70%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 673px) {
   .btn-probar {
@@ -8176,7 +8175,7 @@ button.close {
     margin: 0 3rem;
   }
   .plans {
-    margin: 0 8rem;
+    margin: 0 7rem;
   }
   .plans-starter {
     height: 545px;
@@ -8187,10 +8186,6 @@ button.close {
   }
 }
 @media screen and (max-width: 640px) {
-  .info-actionsimgpc img {
-    width: 315px;
-    height: 295px;
-  }
   .checkmark-text {
     left: 2rem;
   }
@@ -8198,9 +8193,6 @@ button.close {
 @media screen and (max-width: 600px) {
   .plans {
     margin: 0 7rem;
-  }
-  .btn-contact {
-    right: 4.45rem;
   }
   .checkmark-text {
     left: 2.9rem;
@@ -8223,15 +8215,13 @@ button.close {
   .checkmark-text {
     left: 2.6rem;
   }
-  .btn-contact {
-    right: 3.45rem;
-  }
-  .mobile-icon {
-    top: 4.7rem;
-    left: 0.5rem;
-  }
   .plans-enterprise {
     height: 706px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .mobile-icon {
+    margin: 1rem 1rem;
   }
 }
 /*
@@ -8240,6 +8230,9 @@ button.close {
 
 */
 @media screen and (max-width: 540px) {
+  .plans {
+    margin: 0 4rem;
+  }
   .plans-starter {
     height: 568px;
   }
@@ -8250,35 +8243,22 @@ button.close {
   .plans-enterprise {
     height: 740px;
   }
+  .mobile-icon {
+    margin: .4rem 1rem;
+  }
 }
 @media screen and (max-width: 480px) {
-  /*.loglog {
-		top: 1.8rem;
-		width: 120px;
-		height: 105px;
-		left: 0.5rem;
-	}*/
   .info {
     margin: 0 1rem;
   }
-  .info-actionsimgpc img {
-    height: 230px;
-  }
   .plans {
-    margin: 0 1rem;
+    margin: 0 3rem;
   }
   .checkmark-text {
     left: 1.35rem;
   }
-  .btn-contact {
-    right: 7.5rem;
-  }
   .btn-prueba {
     padding: 1.25em 0.5em;
-  }
-  .mobile-icon {
-    top: 3.5rem;
-    left: 1.5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -8289,34 +8269,38 @@ button.close {
     margin-left: 1rem;
   }
 }
+@media screen and (max-width: 439px) {
+  .mobile-icon {
+    margin: 1rem 1rem;
+  }
+}
 @media screen and (max-width: 430px) {
   .footer-landing ul li a {
     font-size: .6rem;
   }
+  .plans {
+    margin: 0 1.5rem;
+  }
+  .mobile-icon {
+    margin: .5rem 1rem;
+  }
 }
-@media screen and (max-width: 414px) {
-  .btn-contact {
-    right: 5.2rem;
+@media screen and (max-width: 391px) {
+  .mobile-icon {
+    margin: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 389px) {
+  .checkmark-text {
+    top: 6.5rem;
+  }
+  .checkmark-icon {
+    top: -1rem;
   }
 }
 @media screen and (max-width: 384px) {
-  .header-landing {
-    font-size: 3.6em;
-  }
   .info {
     margin: 0 .3rem;
-  }
-  .info-imgcsd img {
-    width: 286px;
-  }
-  .info-actionsimgpc img {
-    width: 241px;
-  }
-  .btn-contact {
-    right: 4.1rem;
-  }
-  .mobile-icon {
-    left: 1.1rem;
   }
   .btn-prueba {
     font-size: 0.8rem;
@@ -8326,25 +8310,15 @@ button.close {
   .checkmark-text {
     left: 0rem;
   }
-  .btn-contact {
-    right: 3.5rem;
-  }
-  .mobile-icon {
-    top: 3.5rem;
-    left: 0.6rem;
+}
+@media screen and (max-width: 340px) {
+  .plans {
+    margin: 0 1rem;
   }
 }
 @media screen and (max-width: 320px) {
-  .header-landing {
-    height: 130px;
-    font-size: 2.6em;
-  }
   .info {
     margin: 0;
-  }
-  .info-imgcsd img {
-    width: 227px;
-    height: 212px;
   }
   .info-actions {
     padding: 1.3em;
@@ -8356,21 +8330,14 @@ button.close {
   .btn-seeplans {
     margin-left: 0;
   }
-  .plans-starter {
-    height: 580px;
-  }
+  .plans-starter,
   .plans-medium,
-  .plans-advanced {
-    height: 669px;
-  }
+  .plans-advanced,
   .plans-enterprise {
-    height: 790px;
+    height: auto;
   }
   .mobile-icon {
     display: none;
-  }
-  .btn-contact {
-    right: 2rem;
   }
 }
 /*
