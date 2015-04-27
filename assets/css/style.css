@@ -7282,11 +7282,6 @@ button.close {
   position: relative;
   width: 207px;
 }
-.mobiles-img img {
-  height: auto;
-  max-width: 100%;
-  padding: 0;
-}
 .header-nav-landing {
   position: absolute;
   right: 0;
@@ -7303,11 +7298,13 @@ button.close {
   text-decoration: none;
   padding: 0.5rem;
   color: #626262;
+  outline: none;
 }
 .btn-nav-landind {
   display: inline-block;
   margin-top: 0 !important;
 }
+/* MAIN - MOBILE */
 .button-menu {
   position: absolute;
   right: .5rem;
@@ -7347,9 +7344,16 @@ button.close {
   text-decoration: none;
   color: #17c7a0;
   font-weight: 600;
+  outline: none;
+  padding: .88rem 6rem;
 }
 .header-navmobil-landing ul li:hover {
   background: #198B72;
+}
+.mobiles-img img {
+  height: auto;
+  max-width: 100%;
+  padding: 0;
 }
 /*
 
@@ -7365,7 +7369,7 @@ button.close {
 .img-metric {
   height: 100% !important;
 }
-/*             */
+/*   SLIDER ONE  */
 .slider-one {
   height: 100%;
   background: #17b4c7;
@@ -7409,7 +7413,7 @@ button.close {
   margin-left: 5rem;
   margin-top: 2rem;
 }
-/*               */
+/*  SLIDER TWO  */
 .slider-two {
   text-align: left;
 }
@@ -7432,7 +7436,7 @@ button.close {
 .img-metric {
   width: 100%;
 }
-/*               */
+/*  SLIDER THREE  */
 .slider-three {
   height: 100%;
   background: #9961b4;

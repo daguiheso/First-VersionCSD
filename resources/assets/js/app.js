@@ -1,6 +1,5 @@
 $(function(){
-    $('#btnsee').click(function() {
-
+    $('.btnsee').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')&& location.hostname == this.hostname) {
             var $target = $(this.hash);
             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
@@ -24,7 +23,8 @@ $(function(){
     });
     /* MAIN MOBIL */
     var $mainmobil = $("#main-mobil"),
-        $button = $("#btn-hamburger");
+        $button = $("#btn-hamburger"),
+        $visited = $(".hidevisit");
 
     function mostrarMenu() {
         $mainmobil.slideToggle();
@@ -33,4 +33,5 @@ $(function(){
 
     // Eventos
     $button.click(mostrarMenu);
+    $visited.click(mostrarMenu);
 });
