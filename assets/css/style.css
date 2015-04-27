@@ -7281,6 +7281,7 @@ button.close {
   padding: .5rem;
   position: relative;
   width: 207px;
+  height: auto;
 }
 .header-nav-landing {
   position: absolute;
@@ -8137,6 +8138,19 @@ button.close {
     display: block;
   }
 }
+@media screen and (min-width: 983px) {
+  .header-navmobil-landing ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 982px) {
+  .header-nav-landing {
+    display: none;
+  }
+  .button-menu {
+    display: block;
+  }
+}
 @media screen and (max-width: 875px) {
   .header-landing {
     height: auto;
@@ -8176,19 +8190,6 @@ button.close {
   }
   .slider-three-subcontenttext {
     bottom: 6rem;
-  }
-}
-@media screen and (min-width: 983px) {
-  .header-navmobil-landing ul {
-    display: none;
-  }
-}
-@media screen and (max-width: 982px) {
-  .header-nav-landing {
-    display: none;
-  }
-  .button-menu {
-    display: block;
   }
 }
 /*
