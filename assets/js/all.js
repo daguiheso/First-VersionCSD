@@ -41,24 +41,16 @@ $(function(){
     });
     /* MAIN MOBIL */
     var $mainmobil = $("#main-mobil"),
-        $mainmobilglobal = $("#main-mobil-global"),
         $button = $("#btn-hamburger"),
-        $buttonglobal = $("#btn-hamburger-global"),
         $visited = $(".hidevisit");
 
     function mostrarMenuLand() {
         $mainmobil.slideToggle();
         return false;
-    }
-
-    function mostrarMenuGlobal() {
-        $mainmobilglobal.slideToggle();
-        return false;
-    }
+    }   
 
     // Eventos
     $button.click(mostrarMenuLand);
-    $buttonglobal.click(mostrarMenuGlobal);
     $visited.click(mostrarMenuLand);
 });
 //# sourceMappingURL=all.js.map
