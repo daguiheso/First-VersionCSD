@@ -7265,7 +7265,7 @@ button.close {
 }
 /*
 
-	HEADER
+	HEADER -LANDING
 
 */
 .header-landing {
@@ -7308,8 +7308,8 @@ button.close {
 .button-menu {
   position: absolute;
   right: .5rem;
-  top: 34%;
-  font-size: 2rem;
+  top: 30%;
+  font-size: 1.5rem;
   display: none;
 }
 .header-navmobil-landing {
@@ -7345,7 +7345,7 @@ button.close {
   color: #17c7a0;
   font-weight: 600;
   outline: none;
-  padding: .88rem 6rem;
+  padding: .88rem 3rem;
 }
 .header-navmobil-landing ul li:hover {
   background: #198B72;
@@ -7490,7 +7490,7 @@ button.close {
 }
 /*
 
-	INFO
+	INFO - LANDING
 
 */
 .info {
@@ -7575,7 +7575,7 @@ button.close {
 }
 /*
 
-	INFO-FEATURES
+	INFO-FEATURES - LANDING
 
 */
 .info-feature {
@@ -7632,7 +7632,7 @@ button.close {
 }
 /*
 
-	PLANS
+	PLANS - LANDING
 
 */
 .line {
@@ -7814,7 +7814,7 @@ button.close {
 }
 /*
 
-	FOOTER
+	FOOTER - LANDING
 
 */
 .footer-landing {
@@ -7858,7 +7858,7 @@ button.close {
 }
 /*
 
-	MODAL
+	MODAL - LANDING
 
 */
 .title-modal-landing {
@@ -7917,7 +7917,7 @@ button.close {
 }
 /*
 
-	MEDIAS DESKTOP
+	MEDIAS DESKTOP - LANDING
 
 */
 @media (min-width: 1681px) and (max-width: 4000px) {
@@ -8188,7 +8188,7 @@ button.close {
 }
 /*
 
-	MEDIAS TABLETS
+	MEDIAS TABLETS - LANDING
 
 */
 @media screen and (max-width: 767px) {
@@ -8277,7 +8277,7 @@ button.close {
 }
 /*
 
-	MEDIAS MOBILS
+	MEDIAS MOBILS - LANDING
 
 */
 @media screen and (max-width: 540px) {
@@ -9439,11 +9439,12 @@ body {
   margin-left: 2em;
   font-size: 0.88rem;
 }
+/* MAIN - MOBILE */
 .hamburguer-menu {
   position: absolute;
-  right: .5rem;
+  right: .4rem;
   line-height: 5.19rem;
-  font-size: 2em;
+  font-size: 1.7em;
   display: none;
   text-decoration: none;
   color: white;
@@ -9451,7 +9452,6 @@ body {
 .hamburguer-menu:hover {
   text-decoration: none;
 }
-/* MAIN - MOBILE */
 .main-navmobil-global {
   display: none;
 }
@@ -9485,7 +9485,7 @@ body {
   color: #17c7a0;
   font-weight: 600;
   outline: none;
-  padding: .88rem 5rem;
+  padding: .88rem 3rem;
 }
 .main-navmobil-global ul li:hover {
   background: #198B72;
