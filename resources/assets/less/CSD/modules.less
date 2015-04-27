@@ -45,6 +45,49 @@
 }
 /*
 
+	FOOTER - MODULE
+
+*/
+.footer-module {
+	text-align: center;
+	margin-top: 4.5rem;
+	line-height: 3.56rem;
+	height: 3.56rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.footer-module ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.footer-module ul li {
+	display: inline-block;
+	position: absolute;
+}
+.footer-module ul > li:nth-child(1) {
+	left: 4rem;
+}
+.footer-module ul > li:nth-child(2) {
+	right: 22.4rem;
+}
+.footer-module ul > li:nth-child(3) {
+	right: 13rem;
+}
+.footer-module ul > li:nth-child(4) {
+	right: 4rem;
+}
+.footer-module ul li a {
+	display: inline-block;
+	color: #626262;
+	font-size: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*
+
 	MEDIAS QUERYS - MODULES
 
 */
@@ -58,6 +101,18 @@
 	.module-prices {
 		line-height: 14rem;
 		margin-left: 2rem;
+	}
+	.footer-module {
+		height: auto;
+		position: static;
+	}
+	.footer-module ul li {
+		display: inline-block;
+		position: static;
+		height: 2rem;
+	}
+	.footer-module ul > li:nth-child(1) {
+		display: block;
 	}
 }
 @media screen and (max-width: 722px) {
@@ -73,5 +128,10 @@
 	}
 	.module-icon {
 		margin: 1rem 1rem;
+	}
+}
+@media screen and (max-width: 430px) {
+	.footer-module ul li a {
+		font-size: .6rem;
 	}
 }

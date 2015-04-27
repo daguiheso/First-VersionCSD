@@ -8446,6 +8446,13 @@ button.close {
   background: url('../images/csdbg.jpg');
   opacity: .8;
 }
+.content-form {
+  width: 450px;
+  margin: 0 auto;
+  background-color: transparent;
+  opacity: 0.9;
+  padding: 4rem 0;
+}
 .form-register {
   padding: 3.12rem;
   opacity: 1!important;
@@ -8461,13 +8468,6 @@ button.close {
   color: #FFF;
   text-align: left;
   font-size: .8rem;
-}
-.content-form {
-  width: 450px;
-  margin: 0 auto;
-  background-color: transparent;
-  opacity: 0.9;
-  padding-top: 5rem;
 }
 .btn-register {
   background: #17C7A0;
@@ -8533,6 +8533,16 @@ button.close {
 	MEDIAS QUERYS - REGISTER
 
 */
+@media screen and (min-width: 1500px) {
+  .content-form {
+    padding: 9rem 0 !important;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content-form {
+    padding: 7rem 0;
+  }
+}
 @media screen and (max-width: 991px) {
   .footer-register {
     height: auto;
@@ -8620,7 +8630,7 @@ button.close {
   margin: 0 auto;
   background-color: transparent;
   opacity: 0.9;
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 .form-login {
   padding: 3.12rem;
@@ -8711,6 +8721,16 @@ button.close {
 	MEDIAS QUERYS - LOGIN
 
 */
+@media screen and (min-width: 1500px) {
+  .content-form {
+    padding: 9rem 0 !important;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content-form {
+    padding: 7rem 0;
+  }
+}
 @media screen and (max-width: 991px) {
   .footer-login {
     height: auto;
@@ -8926,6 +8946,49 @@ button.close {
 }
 /*
 
+	FOOTER - MODULE
+
+*/
+.footer-module {
+  text-align: center;
+  margin-top: 4.5rem;
+  line-height: 3.56rem;
+  height: 3.56rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-module ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-module ul li {
+  display: inline-block;
+  position: absolute;
+}
+.footer-module ul > li:nth-child(1) {
+  left: 4rem;
+}
+.footer-module ul > li:nth-child(2) {
+  right: 22.4rem;
+}
+.footer-module ul > li:nth-child(3) {
+  right: 13rem;
+}
+.footer-module ul > li:nth-child(4) {
+  right: 4rem;
+}
+.footer-module ul li a {
+  display: inline-block;
+  color: #626262;
+  font-size: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*
+
 	MEDIAS QUERYS - MODULES
 
 */
@@ -8939,6 +9002,18 @@ button.close {
   .module-prices {
     line-height: 14rem;
     margin-left: 2rem;
+  }
+  .footer-module {
+    height: auto;
+    position: static;
+  }
+  .footer-module ul li {
+    display: inline-block;
+    position: static;
+    height: 2rem;
+  }
+  .footer-module ul > li:nth-child(1) {
+    display: block;
   }
 }
 @media screen and (max-width: 722px) {
@@ -8954,6 +9029,11 @@ button.close {
   }
   .module-icon {
     margin: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer-module ul li a {
+    font-size: .6rem;
   }
 }
 /*
