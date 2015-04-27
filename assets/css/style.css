@@ -7308,7 +7308,7 @@ button.close {
 .button-menu {
   position: absolute;
   right: .5rem;
-  top: 30%;
+  top: 41%;
   font-size: 1.5rem;
   display: none;
 }
@@ -8178,7 +8178,12 @@ button.close {
     bottom: 6rem;
   }
 }
-@media screen and (max-width: 835px) {
+@media screen and (min-width: 983px) {
+  .header-navmobil-landing ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 982px) {
   .header-nav-landing {
     display: none;
   }
@@ -8296,6 +8301,11 @@ button.close {
   }
   .mobile-icon {
     margin: .4rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .button-menu {
+    top: 30%;
   }
 }
 @media screen and (max-width: 480px) {
