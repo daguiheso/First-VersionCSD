@@ -7594,6 +7594,10 @@ button.close {
   border-radius: 5px;
   position: relative;
 }
+.feature-head a {
+  color: #626262;
+  text-decoration: none;
+}
 .feature-head:hover {
   background: #17C7A0;
   color: #FFF;
