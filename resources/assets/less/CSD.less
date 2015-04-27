@@ -92,11 +92,11 @@ body {
     overflow: hidden;
     padding: 0 4.25em;
 }
-.header-global nav {
+.nav-global {
 	margin: 0;
 	position: relative;
 }	
-.header-global nav img {
+.nav-global img {
 	width: 90px;
 	height: auto;
 	position: relative;
@@ -104,23 +104,15 @@ body {
 	left: 0em;
 	float: left;
 }
-.header-global nav ul {
+.nav-ul-global {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.header-global nav ul li {
+.nav-ul-li-global {
 	float: left;
 }
-.header-global nav ul li:nth-child(4) {
-	position: absolute;
-	right: 6em;
-}
-.header-global nav ul li:nth-child(5) {
-	position: absolute;
-	right: 0em;
-}
-.header-global nav ul li a {
+.nav-ul-li-global a {
 	color: #FFF;
 	line-height: 5.19rem;
 	text-decoration: none;
@@ -129,10 +121,59 @@ body {
 }
 .hamburguer-menu {
 	position: absolute;
-	right: 4.5rem;
+	right: .5rem;
 	line-height: 5.19rem;
 	font-size: 2em;
 	display: none;
+	text-decoration: none;
+	color: white;
+}
+.hamburguer-menu:hover {
+	text-decoration: none;
+}
+/* MAIN - MOBILE */
+.main-navmobil-global {
+	display: none;
+}
+.main-navmobil-global ul {
+	padding: 0;
+	width: 76%;
+	position: absolute;
+	border-radius: 5px;
+	top: 0;
+	transition: .3s;
+	background: #f4f4f4;;
+	margin: 0;
+	z-index: 999;
+	left: 50%;
+	margin-left: -38%;
+	text-align: center;
+}
+.main-navmobil-global ul li {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	transition: .3s;
+	list-style: none;
+}
+.logo-mobil {
+	width: 25%;
+	height: auto;
+}
+.main-navmobil-global ul li a {
+	text-decoration: none;
+	color: @verde-csd;
+	font-weight: 600;
+    outline: none;
+    padding: .88rem 5rem;
+}
+.main-navmobil-global ul li:hover {
+	background: #198B72;
+}
+.mobiles-img img {
+	height: auto;
+	max-width: 100%;
+	padding: 0;
 }
 /*
 
@@ -269,14 +310,15 @@ body {
 	}
 }
 @media screen and (max-width: 630px) {
-	.header-global nav ul {
+	.header-global {
+	    padding: 0 5em;
+	}
+	.header-global
+	.nav-ul-global {
 		display: none;
 	}
 	.hamburguer-menu {
 		display: block;
-	}
-	.header-global {
-	    padding: 0 5em;
 	}
 }
 @media screen and (max-width: 430px) {

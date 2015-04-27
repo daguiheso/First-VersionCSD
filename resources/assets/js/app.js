@@ -23,15 +23,23 @@ $(function(){
     });
     /* MAIN MOBIL */
     var $mainmobil = $("#main-mobil"),
+        $mainmobilglobal = $("#main-mobil-global"),
         $button = $("#btn-hamburger"),
+        $buttonglobal = $("#btn-hamburger-global"),
         $visited = $(".hidevisit");
 
-    function mostrarMenu() {
+    function mostrarMenuLand() {
         $mainmobil.slideToggle();
         return false;
     }
 
+    function mostrarMenuGlobal() {
+        $mainmobilglobal.slideToggle();
+        return false;
+    }
+
     // Eventos
-    $button.click(mostrarMenu);
-    $visited.click(mostrarMenu);
+    $button.click(mostrarMenuLand);
+    $buttonglobal.click(mostrarMenuGlobal);
+    $visited.click(mostrarMenuLand);
 });
