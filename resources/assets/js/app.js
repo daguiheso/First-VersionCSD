@@ -11,6 +11,7 @@ $(function(){
             }
         }
     });
+    /* ALERT - SWEET ALERT 2 */
     $('.btn-enviar').on('click', function() {
         swal({
         	title: 'GRACIAS',
@@ -21,4 +22,15 @@ $(function(){
         	width: '310'
         });
     });
+    /* MAIN MOBIL */
+    var $mainmobil = $("#main-mobil"),
+        $button = $("#btn-hamburger");
+
+    function mostrarMenu() {
+        $mainmobil.slideToggle();
+        return false;
+    }
+
+    // Eventos
+    $button.click(mostrarMenu);
 });

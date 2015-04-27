@@ -39,5 +39,16 @@ $(function(){
         	width: '310'
         });
     });
+
+    var $mainmobil = $("#main-mobil"),
+        $button = $("#btn-hamburger");
+
+    function mostrarMenu() {
+        $mainmobil.slideToggle();
+        return false;
+    }
+
+    // Eventos
+    $button.click(mostrarMenu);
 });
 //# sourceMappingURL=all.js.map

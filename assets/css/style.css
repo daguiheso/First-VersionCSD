@@ -7302,10 +7302,54 @@ button.close {
 .header-nav-landing ul li a {
   text-decoration: none;
   padding: 0.5rem;
+  color: #626262;
 }
 .btn-nav-landind {
   display: inline-block;
   margin-top: 0 !important;
+}
+.button-menu {
+  position: absolute;
+  right: .5rem;
+  top: 34%;
+  font-size: 2rem;
+  display: none;
+}
+.header-navmobil-landing {
+  display: none;
+}
+.header-navmobil-landing ul {
+  padding: 0;
+  width: 76%;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  transition: .3s;
+  background: #f4f4f4;
+  margin: 0;
+  z-index: 999;
+  left: 50%;
+  margin-left: -38%;
+  text-align: center;
+}
+.header-navmobil-landing ul li {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  transition: .3s;
+  list-style: none;
+}
+.logo-mobil {
+  width: 25%;
+  height: auto;
+}
+.header-navmobil-landing ul li a {
+  text-decoration: none;
+  color: #17c7a0;
+  font-weight: 600;
+}
+.header-navmobil-landing ul li:hover {
+  background: #198B72;
 }
 /*
 
@@ -8130,9 +8174,12 @@ button.close {
     bottom: 6rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 835px) {
   .header-nav-landing {
     display: none;
+  }
+  .button-menu {
+    display: block;
   }
 }
 /*
