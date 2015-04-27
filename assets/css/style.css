@@ -7273,9 +7273,6 @@ button.close {
   height: 162px;
   position: relative;
 }
-.csd {
-  font-weight: bold;
-}
 .loglog {
   left: 3rem;
   padding: .5rem;
@@ -7337,9 +7334,8 @@ button.close {
   transition: .3s;
   list-style: none;
 }
-.logo-mobil {
-  width: 25%;
-  height: auto;
+.header-navmobil-landing ul li:hover {
+  background: #198B72;
 }
 .header-navmobil-landing ul li a {
   text-decoration: none;
@@ -7348,9 +7344,6 @@ button.close {
   outline: none;
   padding: .88rem 3rem;
 }
-.header-navmobil-landing ul li:hover {
-  background: #198B72;
-}
 .mobiles-img img {
   height: auto;
   max-width: 100%;
@@ -7358,7 +7351,7 @@ button.close {
 }
 /*
 
-	SLIDER
+	SLIDER -LANDING
 
 */
 .slider {
@@ -7531,7 +7524,7 @@ button.close {
 }
 /*
 
-	INFO-ACTIONS
+	INFO - ACTIONS - LANDING
 
 */
 .info-actionsimgpc {
@@ -7816,6 +7809,10 @@ button.close {
 .btn-prueba:hover {
   color: #FFFFFF;
   background: #198B72;
+}
+.logo-mobil {
+  width: 25%;
+  height: auto;
 }
 /*
 
@@ -8548,7 +8545,7 @@ button.close {
 .content-form {
   width: 450px;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: transpar  ent;
   opacity: 0.9;
   padding: 4rem 0;
 }
@@ -9400,7 +9397,7 @@ body {
 }
 /*
 
-	HEADER - CSD
+	NAV-BAR - GLOBAL
 
 */
 .navbar-csd {
@@ -9487,7 +9484,7 @@ body {
 }
 /*
 
-	FOOTER - CSD
+	FOOTER - GLOBAL
 
 */
 .footer-global {
