@@ -12,25 +12,35 @@
 	HEADER - GLOBAL
 		 
 -->
-	<header class="header-global">
-		<a class="glyphicon glyphicon-menu-hamburger hamburguer-menu"></a>
-		<nav class="nav-global">
-			<img src="assets/images/csd-b.png">
-			<ul class="nav-ul-global">
-				<li class="nav-ul-li-global"><a href="">MI CUENTA</a></li>
-				<li class="nav-ul-li-global"><a href="">MI FACTURA</a></li>
-				<li class="nav-ul-li-global"><a href="">MÓDULOS</a></li>
-			</ul>
-		</nav>
-		<nav id="main-mobil-global" class="main-navmobil-global">
-		    <ul>
-		        <img class="logo-mobil" src="assets/images/csd.png">
-		        <li><a class="btnsee hidevisit" href="">MI CUENTA</a></li>
-		        <li><a class="btnsee hidevisit" href="">MI FACTURA</a></li>
-		        <li><a class="" href="">MÓDULOS</a></li>
-		    </ul>
-		</nav>
-	</header>
+	<nav class="navbar navbar-default navbar-csd">
+    <div class="container-fluid">
+      <div class="navbar-header navbar-global">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <img class="header-logo" src="assets/images/csd-b.png">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-ul-li-global nav-item" href="{{ url('/') }}">MI CUENTA</a></li>
+          <li><a class="nav-ul-li-global nav-item" href="{{ url('/') }}">MI FACTURA</a></li>
+          <li><a class="nav-ul-li-global nav-item" href="{{ url('/') }}">MÓDULOS</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jose<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="nav-ul-li-globalrespon" href="{{ url('/me/edit') }}">Editar Perfil</a></li>
+              <li><a class="nav-ul-li-globalrespon" href="{{ url('/auth/logout') }}">Salida segura</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+	</nav>
 	<section class="container martop fs-min">
 <!-- 
 
