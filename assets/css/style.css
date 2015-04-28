@@ -9325,6 +9325,18 @@ button.close {
     margin: 0 0.2rem;
   }
 }
+.content-email {
+  display: inline-block;
+  padding: 3rem 1.5rem;
+  border-bottom: 7px solid #ececec;
+  border-left: 7px solid #ececec;
+  border-right: 7px solid #ececec;
+  border-top: 7px solid #ececec;
+}
+.email-img {
+  width: 30%;
+  height: auto;
+}
 html {
   font-size: 16px !important;
 }
@@ -9416,6 +9428,7 @@ body {
   top: .25em;
   left: 0em;
   float: left;
+  margin-right: 1rem;
 }
 .nav-ul-li-global {
   color: #FFF !important;
