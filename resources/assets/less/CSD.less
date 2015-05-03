@@ -12,9 +12,11 @@
 
 html {
 	font-size: 16px !important;
+	height: 100%;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	height: 100%;
 }
 /* oocss clases */
 .absolute {
@@ -172,12 +174,28 @@ body {
 }
 /*
 
+	CONTENERDOR - SECTIONS
+
+*/
+.wrapper {
+	overflow: hidden;
+	height: auto;
+	min-height: 100%;
+	margin: 0 auto;
+}
+.content-section {
+	margin-top: 57px;
+	margin-bottom: 107px;
+	padding: 15px;
+}
+/*
+
 	FOOTER - GLOBAL
 
 */
 .footer-global {
 	text-align: center;
-	margin-top: 4.5rem;
+	margin-top: -3.56rem;
 	line-height: 3.56rem;
 	height: 3.56rem;
 }
@@ -206,8 +224,8 @@ body {
 	display: inline-block;
 	color: #626262;
 	font-size: .8rem;
-  font-weight: bold;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 }
 .mgbtn0 {
 	margin-bottom: 0
@@ -326,6 +344,11 @@ body {
 @media screen and (max-width: 630px) {
 	.hamburguer-menu {
 		display: block;
+	}
+}
+@media screen and (max-width: 500px) {
+	.privacy-title {
+	  font-size: 2.5rem;
 	}
 }
 @media screen and (max-width: 430px) {

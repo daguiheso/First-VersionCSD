@@ -41,156 +41,158 @@
             </div>
         </div>
     </nav>
-	<section class="container martop marbot fs-min">
+    <div class="wrapper">
+        <section class="container content-section fs-min">
 <!-- 
 
-	ALERT - PERIODO DE PRUEBA
-			 
+    ALERT - PERIODO DE PRUEBA
+                 
 -->
-		<div class="alert alert-info alert-csd">
-			<span class="glyphicon glyphicon-info-sign sign-info "></span> 		
-			<h4 class="mb0"><i class="fa fa-info"></i><strong>ESTA EN PERIODO DE PRUEBA</strong></h4>
-			<p>Gracias por probar <strong>CLOUD SERVICE DESK</strong>, su periodo de prueba termina el <strong>07/05/2015 04:45 PM</strong>.<br> Recuerde para esa fecha suscribirse a uno de nuestros planes para no interrumpir el servicio.</p>
-	    </div>
+            <div class="alert alert-info alert-csd">
+                <span class="glyphicon glyphicon-info-sign sign-info "></span>      
+                <h4 class="mb0"><i class="fa fa-info"></i><strong>ESTA EN PERIODO DE PRUEBA</strong></h4>
+                <p>Gracias por probar <strong>CLOUD SERVICE DESK</strong>, su periodo de prueba termina el <strong>07/05/2015 04:45 PM</strong>.<br> Recuerde para esa fecha suscribirse a uno de nuestros planes para no interrumpir el servicio.</p>
+            </div>
 <!-- 
 
     PANEL - PROFILE
-  			 
- -->
-		<div class="col-md-12 martop">
-            <div class="panel panel-default">
-              	<div class="panel-heading panel-heading-perfil">
-                    <h2>MI PERFIL</h2>
-                </div>
-                <div class="panel-body">
-                    <div role="tabpanel">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#editProfile" aria-controls="editProfile" role="tab" data-toggle="tab">Editar Perfil</a></li>
-                            <li role="presentation"><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Facturación</a></li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="editProfile">
-                                <div class="col-md-6">
-                                    <div class="form-group martop">
-                                        <label for="perfil-name" required>Nombre:</label>
-                                      	<input type="text" class="form-control" id="perfil-name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="perfil-email" required>Email:</label>
-                                      	<input type="email" class="form-control" id="perfil-email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="perfil-namecompany" required>Nombre de la Compañía :</label>
-                                      	<input type="email" class="form-control" id="perfil-namecompany">
-                                    </div>
-                                    <div class="form-group">
-                    	                <input type="submit" class="btn btn-default btn-csd-small" value="GUARDAR"> 
-                    	            </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="billing">
-                                <hr>
-                                <div class="col-md-12">
-                                    <strong>Plan Actual: </strong> CSD Básico<br/>
-                                    <strong>Próximo Pago: </strong> 05/09/2015<br/>
-                                    <hr>
-                                    <h3 class="fw-bold">Recibos</h3>
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <th>Fecha</th>
-                                                <th>Valor</th>
-                                                <th></th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>04/09/2015</td>
-                                                    <td>$100.00</td>
-                                                    <td>
-                                                        <a href="" class="btn btn-csd-small" data-toggle="modal" data-target=".bill-modal"><i class="fa fa-file"></i> VER RECIBO</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-<!-- 
-
-  MODAL - BILL
-               
+                 
 -->
-            <div class="modal fade bill-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content backgmodal-bill gray">
-                        <div class="modal-header center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <img src="assets/images/csd.png">
-                        </div>
-                        <div class="modal-body">
-                            <div class="col-lg-6">
-                                <strong>Para:</strong> uncorreo@cualquiera.com
-                            </div>
-                            <div class="col-lg-6">
-                                <strong>Producto:</strong> Cloud Service Desk
-                            </div>
-                            <div class="col-lg-6">
-                                <strong>Fecha:</strong> Abril 9, 2015
-                            </div>
-                            <div class="col-lg-6">
-                                <strong>Recibo No:</strong> n_15npm56_ASF1fgn2
-                            </div>
-                            <div class="content-databill">
-                                <table class="table">
-                                    <thead>
-                                        <th class="border-csd">Description</th>
-                                        <th class="border-csd">Date</th>
-                                        <th class="border-csd">Amount</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Suscription(1)</td>
-                                            <td>Abril 9 2015 - Mayo 9 2015</td>
-                                            <td>$100.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="border-total relative">
-                                    <strong class="total-label-modal">TOTAL: </strong><span class="total-modal">$100.00</span>
+            <div class="col-md-12">
+                <div class="panel panel-default martop">
+                    <div class="panel-heading panel-heading-perfil">
+                        <h2>MI PERFIL</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#editProfile" aria-controls="editProfile" role="tab" data-toggle="tab">Editar Perfil</a></li>
+                                <li role="presentation"><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Facturación</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="editProfile">
+                                    <div class="col-md-6">
+                                        <div class="form-group martop">
+                                            <label for="perfil-name" required>Nombre:</label>
+                                            <input type="text" class="form-control" id="perfil-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="perfil-email" required>Email:</label>
+                                            <input type="email" class="form-control" id="perfil-email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="perfil-namecompany" required>Nombre de la Compañía :</label>
+                                            <input type="email" class="form-control" id="perfil-namecompany">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-default btn-csd-small" value="GUARDAR"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="billing">
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <strong>Plan Actual: </strong> CSD Básico<br/>
+                                        <strong>Próximo Pago: </strong> 05/09/2015<br/>
+                                        <hr>
+                                        <h3 class="fw-bold">Recibos</h3>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <th>Fecha</th>
+                                                    <th>Valor</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>04/09/2015</td>
+                                                        <td>$100.00</td>
+                                                        <td>
+                                                            <a href="" class="btn btn-csd-small" data-toggle="modal" data-target=".bill-modal"><i class="fa fa-file"></i> VER RECIBO</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="center">
-                            <a href="" class="btn btn-csd" data-dismiss="modal">IMPRIMIR RECIBO</a>
-                            <p class="csd-foter-modal">Cloud Service Desk by Red Design Systems</p>
+                    </div>
+                </div>
+                <hr>
+    <!-- 
+
+      MODAL - BILL
+                   
+    -->
+                <div class="modal fade bill-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content backgmodal-bill gray">
+                            <div class="modal-header center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <img src="assets/images/csd.png">
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-lg-6">
+                                    <strong>Para:</strong> uncorreo@cualquiera.com
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>Producto:</strong> Cloud Service Desk
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>Fecha:</strong> Abril 9, 2015
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>Recibo No:</strong> n_15npm56_ASF1fgn2
+                                </div>
+                                <div class="content-databill">
+                                    <table class="table">
+                                        <thead>
+                                            <th class="border-csd">Description</th>
+                                            <th class="border-csd">Date</th>
+                                            <th class="border-csd">Amount</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Suscription(1)</td>
+                                                <td>Abril 9 2015 - Mayo 9 2015</td>
+                                                <td>$100.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="border-total relative">
+                                        <strong class="total-label-modal">TOTAL: </strong><span class="total-modal">$100.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <a href="" class="btn btn-csd" data-dismiss="modal">IMPRIMIR RECIBO</a>
+                                <p class="csd-foter-modal">Cloud Service Desk by Red Design Systems</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+    <!-- 
+
+      DELETE - SUSCRIPTION
+                 
+    --> 
+                <div class="col-md-12">
+                    <div class="delete-susc">
+                        <p>Puede eliminar su suscripción cuando lo desee, su información no se borrará, el sistema se mantendrá activo hasta el próximo ciclo de facturación.</p>
+                        <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"><span class="white ff"> Eliminar suscripción</span></button>
+                    </div>
+                </div>
             </div>
+        </section>
+    </div>
 <!-- 
 
-  DELETE - SUSCRIPTION
-      	     
---> 
-            <div class="col-md-12">
-              	<div class="delete-susc">
-                    <p>Puede eliminar su suscripción cuando lo desee, su información no se borrará, el sistema se mantendrá activo hasta el próximo ciclo de facturación.</p>
-                    <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"><span class="white ff"> Eliminar suscripción</span></button>
-              	</div>
-            </div>
-  	    </div>
-	</section>
-<!-- 
-
-	FOOTER - GLOBAL
-	     
+    FOOTER - GLOBAL
+         
 --> 
     <footer class="footer-global">
         <ul>
@@ -200,6 +202,6 @@
             <li><a href="/privacy">Política de Privacidad</a></li>
         </ul>
     </footer>
-	<script type="text/javascript" src="assets/js/all.js"></script>
+    <script type="text/javascript" src="assets/js/all.js"></script>
 </body>
 </html>
