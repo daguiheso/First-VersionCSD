@@ -1,13 +1,20 @@
 .search-content {
-	padding: 4rem 0;
+	padding: 0 0 2rem 0;
+}
+.search-content img {
+	height: auto;
+	width: 268px;
+	margin-bottom: .5rem;
 }
 .know-search {
-	width: 55%;
+	width: 45%;
 	display: inline-block;
-	
 }
 .btn-know-search {
 	padding: .4rem .7rem !important;
+	border-radius: 0;
+	position: relative;
+	bottom: 0.1rem;
 }
 .for-init {
 	border-right: 1px solid #D0CCCC;
@@ -31,9 +38,24 @@
 
 */
 @media screen and (max-width: 767px) {
+	.know-search {
+		width: 70%;
+	}
 	.for-init {
 		padding-left: 3rem;
 		border-right: 0;
 		padding-bottom: 1.5rem;
 	}
+}
+@media screen and (max-width: 487px) {
+	.search-content img {
+		width: 60%;
+	}
+	.for-init {
+		padding-left: 2rem;
+	}
+	.frequent-ask {
+		padding-left: 2rem;
+	}
+
 }
