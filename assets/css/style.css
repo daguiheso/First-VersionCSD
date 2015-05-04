@@ -9364,6 +9364,10 @@ button.close {
 	CONTENT - KNOWLEDGE
 
 */
+.knowledge ul li a {
+  color: #626262;
+  text-decoration: none;
+}
 .titles-know {
   color: #17c7a0;
   font-weight: 500;
@@ -9374,7 +9378,8 @@ button.close {
   font-weight: 500;
 }
 .for-init,
-.about {
+.about,
+.article {
   border-right: 1px solid #D0CCCC;
   padding-bottom: 6rem;
 }
@@ -9394,6 +9399,39 @@ button.close {
 .about ul,
 .about-col2 ul {
   padding-left: 1rem;
+}
+.quit-list {
+  list-style: none;
+  padding-left: 0;
+}
+.quit-list li {
+  margin-bottom: .5rem;
+}
+/*
+
+	ARTICLE - KNOWLEDGE
+
+*/
+.know-article-search {
+  width: 84%;
+  display: inline-block;
+}
+.list-tag {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 3rem;
+}
+.list-tag li {
+  display: inline-block;
+}
+.list-tag li a {
+  color: #626262;
+  text-decoration: none;
+}
+.article-video {
+  width: 800px;
+  margin: 2rem 
+0;
 }
 /*
 
