@@ -1,3 +1,8 @@
+/*
+
+	IMAGE AND SEARCH - KNOWLEDGE
+
+*/
 .search-content {
 	padding: 0 0 2rem 0;
 }
@@ -16,45 +21,71 @@
 	position: relative;
 	bottom: 0.1rem;
 }
-.for-init {
-	border-right: 1px solid #D0CCCC;
-	padding-bottom: 6rem;
-}
-.frequent-ask {
-	padding-left: 3rem;
-}
-.for-init ul,
-.frequent-ask ul {
-	padding-left: 1rem
-}
+/*
+
+	CONTENT - KNOWLEDGE
+
+*/
 .titles-know {
 	color: @verde-csd;
 	font-weight: 500;
 	margin-bottom: 1.2rem;
 }
+.subtitles-know {
+	color: black;
+	font-weight: 500;
+}
+.for-init,
+.about {
+	border-right: 1px solid #D0CCCC;
+	padding-bottom: 6rem;
+}
+.frequent-ask,
+.about-col2 {
+	padding-left: 3rem;
+}
+.search-results {
+	padding: 0 1rem;
+}
+.about-col2 {
+	margin-top: 3.5rem;
+}
+.for-init ul,
+.frequent-ask ul,
+.search-results ul,
+.about ul,
+.about-col2 ul {
+	padding-left: 1rem
+}
 /*
 
-	MEDIAS QUERYS - KNOWLEDGE - BASE
+	MEDIAS QUERYS - KNOWLEDGE
 
 */
 @media screen and (max-width: 767px) {
 	.know-search {
 		width: 70%;
 	}
-	.for-init {
+	.for-init,
+	.about {
 		padding-left: 3rem;
 		border-right: 0;
 		padding-bottom: 1.5rem;
+	}
+	.about-col2 {
+		margin-top: -1.1rem;
 	}
 }
 @media screen and (max-width: 487px) {
 	.search-content img {
 		width: 60%;
 	}
-	.for-init {
+	.for-init,
+	.about {
 		padding-left: 2rem;
 	}
-	.frequent-ask {
+	.frequent-ask,
+	.about-col2 {
 		padding-left: 2rem;
 	}
 
