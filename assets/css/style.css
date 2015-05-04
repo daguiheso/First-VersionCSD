@@ -9430,14 +9430,30 @@ button.close {
 }
 .article-video {
   width: 800px;
-  margin: 2rem 
-0;
+  margin: 2rem 0;
 }
 /*
 
 	MEDIAS QUERYS - KNOWLEDGE
 
 */
+@media screen and (max-width: 1199px) {
+  .container-repon {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .article {
+    border-right: 0;
+  }
+  .know-article-search {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  .article {
+    padding-bottom: 4rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .know-search {
     width: 70%;
@@ -9452,6 +9468,11 @@ button.close {
     margin-top: -1.1rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .know-article-search {
+    width: 88%;
+  }
+}
 @media screen and (max-width: 487px) {
   .search-content img {
     width: 60%;
@@ -9463,6 +9484,11 @@ button.close {
   .frequent-ask,
   .about-col2 {
     padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .know-article-search {
+    width: 70%;
   }
 }
 html {
