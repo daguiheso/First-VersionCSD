@@ -8,6 +8,7 @@ elixir(function(mix) {
     	"jquery/jquery.min.js",
     	"bootstrap/bootstrap.min.js",
     	"sweetalert2/sweetalert2.min.js",
+    	"disqus/disqus.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
